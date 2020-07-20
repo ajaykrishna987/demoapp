@@ -1,0 +1,4292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdGlobe</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--
+
+TemplateMo 552 Video Catalog
+
+https://templatemo.com/tm-552-video-catalog
+
+-->
+<style type="text/css">
+   .collapsible {
+  background-color: #371fd3;
+  color: white;
+  cursor: pointer;
+  margin: 1px;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color:#b31167e6;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+    .dropbtn {
+ background-color: #7a308f;
+  color: white;
+  padding: px;
+  font-size: 16px;
+  border:px;
+  margin-bottom: 2px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+</head>
+
+<body>
+    <div class="tm-page-wrap mx-auto">
+         <div class="position-relative">
+            <div class="potition-absolute tm-site-header">
+                <div class="container-fluid position-relative">
+                    <div class="row tm-bg-black">                       
+                        <div class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                            <a href="index.html" class=" text-center-white">
+                                
+                                <h1 class="tm-site-name">Ed-Globe</h1>
+                            </a>
+                        </div>
+                        <div class="col-5 col-md-8 ml-auto mr-0">
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                      <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                                        data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                            <i class="fas fa-times tm-menu-opened-icon"></i>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+
+                                        <ul class="navbar-nav text-uppercase">
+                                             
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link text-black" href="Demo.html">Demo</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link text-black" href="Chapters.html">Chapters</a>   
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-welcome-container  tm-fixed-header tm-fixed-header-2">
+            </div>
+          
+            <div   id="tm-fixed-header-bg"></div> <!-- Header image -->
+        </div>
+        <div class="container-fluid">
+            <div id="content" class="mx-auto tm-content-container">
+                <main>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="tm-page-title mb-4">Classwise Subject & Demos</h2>
+                            <div class="tm-categories-container mb-5" >
+                                <h3 class="tm-text-primary tm-categories-text">CBSE CLASS :</h3>
+                                 <select class=".dropdown-menu-right" id="ddlPassport">
+     <option>Select Class</option>                                
+    <option value="1">Class1</option>
+    <option value="2">Class2</option>
+    <option value="3">Class3</option>
+    <option value="4">Class4</option>
+     <option value="5">Class5</option>
+     <option value="6">Class6</option>
+     <option value="8">Class8</option>
+     <option value="9">Class9</option>
+     <option value="10">Class10</option>
+     <option value="11">Class11</option> 
+      <option value="12">Class12</option> 
+</select>
+<script type="text/javascript">
+    $(function () {
+        $("#ddlPassport").change(function () {
+            if ($(this).val() == "1") {
+                $("#class1").show();
+                $("#class2").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            } else if($(this).val() == "2") {
+                $("#class1").hide();
+                $("#class2").show();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide(); 
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            }
+           else if ($(this).val() == "3") {
+                $("#class2").hide();
+                $("#class1").hide();
+                $("#class3").show();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            }  
+           else if ($(this).val() == "4") {
+                $("#class2").hide();
+                $("#class1").hide();
+                $("#class3").hide();
+                $("#class4").show();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            } 
+            else if ($(this).val() == "5") {
+                $("#class2").hide();
+                $("#class1").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").show();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            } 
+             else if ($(this).val() == "6") {
+                $("#class2").hide();
+                $("#class1").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").show();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            }
+            else if ($(this).val() == "8") {
+                $("#class2").hide();
+                $("#class1").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").show();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            }
+            else if($(this).val() == "9") {
+                $("#class1").hide();
+                $("#class2").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                
+                $("#class8").hide();
+                $("#class9").show();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").hide();
+            } 
+            else if($(this).val() == "10") {
+                $("#class1").hide();
+                $("#class2").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").show();
+                $("#class11").hide();
+                $("#class12").hide(); 
+            } 
+            else if($(this).val() == "11") {
+                $("#class1").hide();
+                $("#class2").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").show();
+                $("#class12").hide();
+            } 
+            else if($(this).val() == "12") {
+                $("#class1").hide();
+                $("#class2").hide();
+                $("#class3").hide();
+                $("#class4").hide();
+                $("#class5").hide();
+                $("#class6").hide();
+                $("#class8").hide();
+                $("#class9").hide();
+                $("#class10").hide();
+                $("#class11").hide();
+                $("#class12").show();
+            } 
+        });
+    });
+</script>
+
+                                    
+                        </div>
+                    </div>
+                    
+
+        <!-- Page content -->
+        <div class="container-fluid">
+            <div class="mx-auto tm-content-container">
+                <main>
+                    <div id="class1" style="display: none;">
+                     <center><h2>CLASS-1 </h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            
+                            
+                                <h3>MATHEMATICS</h3>
+                                 
+  <button class="collapsible">NUMBERS</button>
+  <div class="content">
+    Numbers from 1-9<br>
+Ordering of Numbers<br>
+Numbers from 10 to 30<br>
+Ordering of Numbers<br>
+Numbers from 31 to 65<br>
+Numbers from 66 to 100<br>
+Even and odd numbers<br>
+Place value<br>
+Numbers in expanded form
+
+   
+  </div>
+
+  <button class="collapsible">ADDITION</button>
+  <div class="content">
+    Addition<br>
+Horizontal Addition<br>
+Addition by zero<br>
+Addition by one<br>
+Adding two digit numbers<br>
+Addition problem<br>
+Addition with pictures
+   
+   
+</div>
+   <button class="collapsible">SUBSTRACTION</button>
+  <div class="content">
+   Subtraction<br>
+Horizontal Subtraction<br>
+Subtraction facts<br>
+Subtracting 2 digit numbers<br>
+Subtraction problem<br>
+Subtraction with pictures<br>
+Addition with pictures
+     </div>
+
+ 
+  <button class="collapsible">MEASUREMENT</button>
+  <div class="content">
+   Big and small<br>
+Long and short<br>
+Thick and thin<br>
+Tall and short<br>
+Heavy and light
+  </div>
+ 
+ 
+  <button class="collapsible">GEOMETRY</button>
+  <div class="content">
+   Line and curve<br>
+Shapes<br>
+Shapes that Roll and slide
+  </div>
+ 
+ 
+  <button class="collapsible">TIME</button>
+  <div class="content">
+   Clock<br>
+Reading time<br>
+Days of the week<br>
+Months of the year
+  </div>
+  <button class="collapsible">MONEY</button>
+  <div class="content">
+  Money<br>
+How much money (coins)<br>
+How much money (notes)<br>
+Which group is more<br>
+Addition and subtraction of money<br>
+  </div>
+
+
+                                                        
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            
+                                 <h3>Science</h3>
+        
+        
+  <button class="collapsible">Living Things</button>
+  <div class="content">
+  Living things and non-living things
+  </div>
+
+        <button class="collapsible">PLANTS</button>
+  <div class="content">
+  Different types of plants<br>
+Variety of plants : Climber<br>
+Very big plants are called trees<br>
+Parts of a Tree<br>
+Different types of leaves<br>
+Flower to Fruit<br>
+Fruits contain seeds<br>
+Seeds to new plants<br>
+Plants give us food<br>
+  
+</div>
+ 
+  <button class="collapsible">ANIMALS</button>
+  <div class="content">
+  Animals live on land and in water<br>
+Birds<br>
+Insects<br>
+Animals have different sizes<br>
+Animals move using their limbs<br>
+All animals need food<br>
+All animals need shelter
+  </div>
+  
+
+  <button class="collapsible">AIR,WATER & WEATHER</button>
+  <div class="content">
+Air is Everywhere<br>
+Air is needed for many things<br>
+Air has weight<br>
+Air occupies space<br>
+Water is needed for many things<br>
+Weather changes everyday
+  </div>
+                  
+
+  <button class="collapsible">OUR UNIVERSE</button>
+  <div class="content">
+The sun<br>
+The moon<br>
+The stars
+  </div>
+
+  <button class="collapsible">HUMAN BODY</button>
+  <div class="content">
+Keeping clean<br>
+Healthy habits<br>
+Our needs
+  </div>
+
+
+  <button class="collapsible">OUR FOOD</button>
+  <div class="content">
+Foods for health<br>
+Plants give us food<br>
+Animals give us food
+  </div>
+
+  <button class="collapsible">SAFETY AND FIRST AID</button>
+  <div class="content">
+Safety rules on the road<br>
+Safety rules on riding buses<br>
+Safety rules on swimming<br>
+Safety rules on playground<br>
+Other safety rules
+  </div>
+
+                            
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+ <h3>English</h3>
+ <button class="collapsible">English</button>
+  <div class="content">
+ 
+Nouns<br>
+Adverbs<br>
+Adjectives<br>
+Prefixes and Suffixes<br>
+Possessive Pronoun<br>
+Pronouns<br>
+Contractions<br>
+Verbs<br>
+Verbs: Tenses<br>
+Sentence<br>
+Kinds of Phrases<br>
+Direct and Indirect Speech<br>
+Active and Passive Voice<br>
+Articles<br>
+Kinds of Clauses<br>
+Prepositions<br>
+Question Tag<br>
+Capital Letter and Punctuation<br>
+Proverb<br>
+Comprehension<br>
+Essay Writing<br>
+Dialogue<br>
+Letter Writing<br>
+Subject and Predicate<br>
+Paragraph<br>
+Collacation<br>
+Interjections<br>
+Homophone<br>
+Performane chart<br>
+Synonyms and Antonyms<br>
+Diary Writting<br>
+Conjunctions
+</div>
+
+        
+  
+</div>
+                        
+                    </div></div>
+                    <div id="class2" style="display: none;">
+                     <center><h2>CLASS - 2 </h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            
+                            
+                                <h3>MATHEMATICS</h3>
+                                
+  <button class="collapsible">NUMBERS</button>
+  <div class="content">
+    Numbers upto 1000<br>
+Place value – 2 digit<br>
+Place value – 3 digit<br>
+Ordering of numbers<br>
+Numbers in expanded form<br>
+Comparing Numbers<br>
+Even and odd numbers<br>
+Ordinals
+
+   
+  </div>
+
+
+  <button class="collapsible">ADDITION</button>
+  <div class="content">
+    Adding 2 – digit numbers<br>
+Adding 3 – digit numbers<br>
+Additive identity<br>
+Addition by one<br>
+4+3 = 3+4<br>
+(3+1)+2 = 3+(1+2)<br>
+Addition problem
+  </div>
+
+  <button class="collapsible">SUBSTRACTION</button>
+  <div class="content">
+   Subtracting 2-digit numbers<br>
+Subtracting 3-digit numbers with borrowing from one place<br>
+Subtracting 3-digit numbers with borrowing from two places<br>
+Subtraction facts<br>
+Addition and Subtraction are inverse operations<br>
+Subtraction problem<br>
+Subtraction with pictures
+     </div>
+
+  <button class="collapsible">MULTIPLICATION
+</button>
+  <div class="content">
+Multiplication<br>
+Zero and one in multiplication<br>
+Multiplying two digit number by 1 Digit number<br>
+Solved problem<br>
+Multiplication table
+  </div>
+
+  <button class="collapsible">FRACTION</button>
+  <div class="content">
+Measurement of length<br>
+Measurement of mass<br>
+Measurement of capacity
+  </div>
+
+  <button class="collapsible">MEASUREMENT</button>
+  <div class="content">
+   Measurement of length<br>
+Measurement of mass<br>
+Measurement of capacity
+  </div>
+
+  <button class="collapsible">GEOMETRY</button>
+  <div class="content">
+  Line and curve<br>
+Shapes<br>
+Sides and Vertices<br>
+Cube<br>
+Cuboid<br>
+Cylinder<br>
+Cone<br>
+Sphere
+
+  </div>
+  <button class="collapsible">TIME</button>
+  <div class="content">
+    Clock<br>
+Reading time<br>
+Days of the week<br>
+Months of the year
+  </div>
+
+  <button class="collapsible">MONEY</button>
+  <div class="content">
+   Count coins<br>
+Count notes and coins<br>
+Which group shows the same amount<br>
+Which group is more<br>
+Buying (using notes and coins)<br>
+Addition of money<br>
+Subtraction of money
+  </div>
+                                                      
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            
+                                 <h3>Science</h3>
+        
+ <button class="collapsible">Living Things</button>
+  <div class="content">
+  Living things and non-living things<br>
+Features of Living things<br>
+Difference between plant and animal<br>
+Non-Green plants
+
+  </div>
+
+  <button class="collapsible">PLANTS</button>
+  <div class="content">
+ There are many kinds of plants<br>
+Variety of plants<br>
+Life span of plants<br>
+Parts of a plant<br>
+Parts of a leaf<br>
+Variety in leaves<br>
+Variety in flowers.<br>
+Plants give us food<br>
+Plants used for other things Mathematics Science English
+  </div>
+
+  <button class="collapsible">ANIMALS</button>
+  <div class="content">
+ Animals live on land and in water<br>
+Domestic and wild animals<br>
+Foods from animals<br>
+Other useful things from animals<br>
+Homes of wild animals<br>
+Food of wild animals<br>
+Endangered animals
+  </div>
+
+  <button class="collapsible">AIR,WATER & WEATHER</button>
+  <div class="content">
+Air is needed for many things<br>
+Air occupies space<br>
+Air has weight<br>
+Air contain water vapor<br>
+Air contain dust and smoke<br>
+Wind<br>
+Water<br>
+Water sources<br>
+Saving water<br>
+Water cycle<br>
+Water purification<br>
+  </div>
+
+  <button class="collapsible">SOIL</button>
+  <div class="content">
+Our Earth<br>
+Rocks<br>
+Minerals<br>
+Gemstones
+  </div>
+  <button class="collapsible">OUR UNIVERSE</button>
+  <div class="content">
+Sun<br>
+Directions<br>
+Shadow<br>
+How long a shadow
+
+  </div>
+
+  <button class="collapsible">HUMAN BODY</button>
+  <div class="content">
+Bones<br>
+Joint<br>
+Muscles<br>
+Healthy Habits
+  </div>
+
+  <button class="collapsible">FOOD</button>
+  <div class="content">
+Foods for health<br>
+Preservation of foods
+
+  </div>
+
+  <button class="collapsible">SAFETY AND FIRST AID</button>
+  <div class="content">
+Safety rules on the road<br>
+Safety rules on riding buses<br>
+Safety rules on swimming<br>
+Safety rules on playground<br>
+Other safety rules<br>
+First aid box
+  </div>
+
+  <button class="collapsible">HOUSING AND CLOTHING</button>
+  <div class="content">
+Different types of houses<br>
+Houses have different roofs<br>
+Clothes we wear
+  </div>
+
+                            
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+ <h3>English</h3>
+ <button class="collapsible">English</button>
+  <div class="content">
+ 
+Nouns<br>
+Adverbs<br>
+Adjectives<br>
+Prefixes and Suffixes<br>
+Possessive Pronoun<br>
+Pronouns<br>
+Contractions<br>
+Verbs<br>
+Verbs: Tenses<br>
+Sentence<br>
+Kinds of Phrases<br>
+Direct and Indirect Speech<br>
+Active and Passive Voice<br>
+Articles<br>
+Kinds of Clauses<br>
+Prepositions<br>
+Question Tag<br>
+Capital Letter and Punctuation<br>
+Proverb<br>
+Comprehension<br>
+Essay Writing<br>
+Dialogue<br>
+Letter Writing<br>
+Subject and Predicate<br>
+Paragraph<br>
+Collacation<br>
+Interjections<br>
+Homophone<br>
+Performane chart<br>
+Synonyms and Antonyms<br>
+Diary Writting<br>
+Conjunctions
+</div>
+
+        
+  
+</div>
+                    </div></div>
+                    <div id="class3" style="display: none;">
+                     <center><h2>CLASS - 3 </h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            
+                            
+                                <h3>MATHEMATICS</h3>
+               
+  <button class="collapsible">NUMBERS</button>
+  <div class="content">
+    Numbers upto 1000<br>
+Place value – 2 digit<br>
+Place value – 3 digit<br>
+Ordering of numbers<br>
+Numbers in expanded form<br>
+Comparing Numbers<br>
+Even and odd numbers<br>
+Ordinals
+
+   
+  </div>
+
+
+  <button class="collapsible">ADDITION</button>
+  <div class="content">
+    Adding 2 – digit numbers<br>
+Adding 3 – digit numbers<br>
+Additive identity<br>
+Addition by one<br>
+4+3 = 3+4<br>
+(3+1)+2 = 3+(1+2)<br>
+Addition problem
+  </div>
+
+  <button class="collapsible">SUBSTRACTION</button>
+  <div class="content">
+   Subtracting 2-digit numbers<br>
+Subtracting 3-digit numbers with borrowing from one place<br>
+Subtracting 3-digit numbers with borrowing from two places<br>
+Subtraction facts<br>
+Addition and Subtraction are inverse operations<br>
+Subtraction problem<br>
+Subtraction with pictures
+     </div>
+
+  <button class="collapsible">MULTIPLICATION
+</button>
+  <div class="content">
+Multiplication<br>
+Zero and one in multiplication<br>
+Multiplying two digit number by 1 Digit number<br>
+Solved problem<br>
+Multiplication table
+  </div>
+
+  <button class="collapsible">FRACTION</button>
+  <div class="content">
+Measurement of length<br>
+Measurement of mass<br>
+Measurement of capacity
+  </div>
+
+  <button class="collapsible">MEASUREMENT</button>
+  <div class="content">
+   Measurement of length<br>
+Measurement of mass<br>
+Measurement of capacity
+  </div>
+
+  <button class="collapsible">GEOMETRY</button>
+  <div class="content">
+  Line and curve<br>
+Shapes<br>
+Sides and Vertices<br>
+Cube<br>
+Cuboid<br>
+Cylinder<br>
+Cone<br>
+Sphere
+
+  </div>
+
+  <button class="collapsible">TIME</button>
+  <div class="content">
+    Clock<br>
+Reading time<br>
+Days of the week<br>
+Months of the year
+  </div>
+
+  <button class="collapsible">MONEY</button>
+  <div class="content">
+   Count coins<br>
+Count notes and coins<br>
+Which group shows the same amount<br>
+Which group is more<br>
+Buying (using notes and coins)<br>
+Addition of money<br>
+Subtraction of money
+  </div>
+
+
+                                                      
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            
+                                 <h3>Science</h3>
+        
+ 
+  <button class="collapsible">Living Things</button>
+  <div class="content">
+  Living things and non-living things<br>
+Features of Living things<br>
+Difference between plant and animal<br>
+Non-Green plants
+
+  </div>
+
+  <button class="collapsible">PLANTS</button>
+  <div class="content">
+ There are many kinds of plants<br>
+Variety of plants<br>
+Life span of plants<br>
+Parts of a plant<br>
+Parts of a leaf<br>
+Variety in leaves<br>
+Variety in flowers.<br>
+Plants give us food<br>
+Plants used for other things Mathematics Science English
+  </div>
+
+  <button class="collapsible">ANIMALS</button>
+  <div class="content">
+ Animals live on land and in water<br>
+Domestic and wild animals<br>
+Foods from animals<br>
+Other useful things from animals<br>
+Homes of wild animals<br>
+Food of wild animals<br>
+Endangered animals
+  </div>
+
+  <button class="collapsible">AIR,WATER & WEATHER</button>
+  <div class="content">
+Air is needed for many things<br>
+Air occupies space<br>
+Air has weight<br>
+Air contain water vapor<br>
+Air contain dust and smoke<br>
+Wind<br>
+Water<br>
+Water sources<br>
+Saving water<br>
+Water cycle<br>
+Water purification<br>
+  </div>
+
+  <button class="collapsible">SOIL</button>
+  <div class="content">
+Our Earth<br>
+Rocks<br>
+Minerals<br>
+Gemstones
+  </div>
+
+  <button class="collapsible">OUR UNIVERSE</button>
+  <div class="content">
+Sun<br>
+Directions<br>
+Shadow<br>
+How long a shadow
+
+  </div>
+  <button class="collapsible">HUMAN BODY</button>
+  <div class="content">
+Bones<br>
+Joint<br>
+Muscles<br>
+Healthy Habits
+  </div>
+  <button class="collapsible">FOOD</button>
+  <div class="content">
+Foods for health<br>
+Preservation of foods
+
+  </div>
+  <button class="collapsible">SAFETY AND FIRST AID</button>
+  <div class="content">
+Safety rules on the road<br>
+Safety rules on riding buses<br>
+Safety rules on swimming<br>
+Safety rules on playground<br>
+Other safety rules<br>
+First aid box
+  </div>
+  <button class="collapsible">HOUSING AND CLOTHING</button>
+  <div class="content">
+Different types of houses<br>
+Houses have different roofs<br>
+Clothes we wear
+  </div>
+
+                            
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+ <h3>English</h3>
+ <button class="collapsible">English</button>
+  <div class="content">
+ 
+Nouns<br>
+Adverbs<br>
+Adjectives<br>
+Prefixes and Suffixes<br>
+Possessive Pronoun<br>
+Pronouns<br>
+Contractions<br>
+Verbs<br>
+Verbs: Tenses<br>
+Sentence<br>
+Kinds of Phrases<br>
+Direct and Indirect Speech<br>
+Active and Passive Voice<br>
+Articles<br>
+Kinds of Clauses<br>
+Prepositions<br>
+Question Tag<br>
+Capital Letter and Punctuation<br>
+Proverb<br>
+Comprehension<br>
+Essay Writing<br>
+Dialogue<br>
+Letter Writing<br>
+Subject and Predicate<br>
+Paragraph<br>
+Collacation<br>
+Interjections<br>
+Homophone<br>
+Performane chart<br>
+Synonyms and Antonyms<br>
+Diary Writting<br>
+Conjunctions
+</div>
+
+        
+  
+</div>
+                    </div></div>
+                    <div id="class4" style="display: none;">
+                     <center><h2>CLASS -4 </h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            
+                            
+                                <h3>MATHEMATICS</h3>
+
+  <button class="collapsible">NUMBERS</button>
+  <div class="content">
+    Numbers upto 1000<br>
+Place value – 2 digit<br>
+Place value – 3 digit<br>
+Ordering of numbers<br>
+Numbers in expanded form<br>
+Comparing Numbers<br>
+Even and odd numbers<br>
+Ordinals
+
+   
+  </div>
+
+  <button class="collapsible">ADDITION</button>
+  <div class="content">
+    Adding 2 – digit numbers<br>
+Adding 3 – digit numbers<br>
+Additive identity<br>
+Addition by one<br>
+4+3 = 3+4<br>
+(3+1)+2 = 3+(1+2)<br>
+Addition problem
+  </div>
+
+  <button class="collapsible">SUBSTRACTION</button>
+  <div class="content">
+   Subtracting 2-digit numbers<br>
+Subtracting 3-digit numbers with borrowing from one place<br>
+Subtracting 3-digit numbers with borrowing from two places<br>
+Subtraction facts<br>
+Addition and Subtraction are inverse operations<br>
+Subtraction problem<br>
+Subtraction with pictures
+     </div>
+
+  <button class="collapsible">MULTIPLICATION
+</button>
+  <div class="content">
+Multiplication<br>
+Zero and one in multiplication<br>
+Multiplying two digit number by 1 Digit number<br>
+Solved problem<br>
+Multiplication table
+  </div>
+
+  <button class="collapsible">FRACTION</button>
+  <div class="content">
+Measurement of length<br>
+Measurement of mass<br>
+Measurement of capacity
+  </div>
+
+  <button class="collapsible">MEASUREMENT</button>
+  <div class="content">
+   Measurement of length<br>
+Measurement of mass<br>
+Measurement of capacity
+  </div>
+
+  <button class="collapsible">GEOMETRY</button>
+  <div class="content">
+  Line and curve<br>
+Shapes<br>
+Sides and Vertices<br>
+Cube<br>
+Cuboid<br>
+Cylinder<br>
+Cone<br>
+Sphere
+
+  </div>
+
+  <button class="collapsible">TIME</button>
+  <div class="content">
+    Clock<br>
+Reading time<br>
+Days of the week<br>
+Months of the year
+  </div>
+
+  <button class="collapsible">MONEY</button>
+  <div class="content">
+   Count coins<br>
+Count notes and coins<br>
+Which group shows the same amount<br>
+Which group is more<br>
+Buying (using notes and coins)<br>
+Addition of money<br>
+Subtraction of money
+  </div>
+
+
+                                                      
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            
+                                 <h3>Science</h3>
+        
+       
+  <button class="collapsible">Living Things</button>
+  <div class="content">
+  Living things and non-living things<br>
+Features of Living things<br>
+Difference between plant and animal<br>
+Non-Green plants
+
+  </div>
+
+  <button class="collapsible">PLANTS</button>
+  <div class="content">
+ There are many kinds of plants<br>
+Variety of plants<br>
+Life span of plants<br>
+Parts of a plant<br>
+Parts of a leaf<br>
+Variety in leaves<br>
+Variety in flowers.<br>
+Plants give us food<br>
+Plants used for other things Mathematics Science English
+  </div>
+
+  <button class="collapsible">ANIMALS</button>
+  <div class="content">
+ Animals live on land and in water<br>
+Domestic and wild animals<br>
+Foods from animals<br>
+Other useful things from animals<br>
+Homes of wild animals<br>
+Food of wild animals<br>
+Endangered animals
+  </div>
+
+  <button class="collapsible">AIR,WATER & WEATHER</button>
+  <div class="content">
+Air is needed for many things<br>
+Air occupies space<br>
+Air has weight<br>
+Air contain water vapor<br>
+Air contain dust and smoke<br>
+Wind<br>
+Water<br>
+Water sources<br>
+Saving water<br>
+Water cycle<br>
+Water purification<br>
+  </div>
+
+  <button class="collapsible">SOIL</button>
+  <div class="content">
+Our Earth<br>
+Rocks<br>
+Minerals<br>
+Gemstones
+  </div>
+
+  <button class="collapsible">OUR UNIVERSE</button>
+  <div class="content">
+Sun<br>
+Directions<br>
+Shadow<br>
+How long a shadow
+
+  </div>
+
+  <button class="collapsible">HUMAN BODY</button>
+  <div class="content">
+Bones<br>
+Joint<br>
+Muscles<br>
+Healthy Habits
+  </div>
+
+  <button class="collapsible">FOOD</button>
+  <div class="content">
+Foods for health<br>
+Preservation of foods
+
+  </div>
+
+  <button class="collapsible">SAFETY AND FIRST AID</button>
+  <div class="content">
+Safety rules on the road<br>
+Safety rules on riding buses<br>
+Safety rules on swimming<br>
+Safety rules on playground<br>
+Other safety rules<br>
+First aid box
+  </div>
+
+  <button class="collapsible">HOUSING AND CLOTHING</button>
+  <div class="content">
+Different types of houses<br>
+Houses have different roofs<br>
+Clothes we wear
+  </div>
+
+                            
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+ <h3>English</h3>
+ <button class="collapsible">English</button>
+  <div class="content">
+ 
+Nouns<br>
+Adverbs<br>
+Adjectives<br>
+Prefixes and Suffixes<br>
+Possessive Pronoun<br>
+Pronouns<br>
+Contractions<br>
+Verbs<br>
+Verbs: Tenses<br>
+Sentence<br>
+Kinds of Phrases<br>
+Direct and Indirect Speech<br>
+Active and Passive Voice<br>
+Articles<br>
+Kinds of Clauses<br>
+Prepositions<br>
+Question Tag<br>
+Capital Letter and Punctuation<br>
+Proverb<br>
+Comprehension<br>
+Essay Writing<br>
+Dialogue<br>
+Letter Writing<br>
+Subject and Predicate<br>
+Paragraph<br>
+Collacation<br>
+Interjections<br>
+Homophone<br>
+Performane chart<br>
+Synonyms and Antonyms<br>
+Diary Writting<br>
+Conjunctions
+</div>
+
+        
+  
+</div>
+                    </div></div>
+                    <div id="class5" style="display: none;">
+                     <center><h2>CLASS -5 </h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            
+                            
+                                <h3>MATHEMATICS</h3>
+
+  <button class="collapsible">Angles</button>
+  <div class="content">
+<a href="">Degree measurement of angles</a><br>
+Construction of angles according to their magnitude<br>
+Triangles<br>
+Circle<br>
+Elements of a circle<br>
+Shapes (Triangle, Quadrilateral, Pentagon, Hexagon)<br>
+Name of angles<br>
+Construction of 60 degree angle<br>
+Construction of 90 degree angle<br>
+Practice problems
+
+   
+  </div>
+
+
+  <button class="collapsible">Whole numbers</button>
+  <div class="content">
+    Place value<br>
+Indian place value system<br>
+International place value system<br>
+Rounding of numbers<br>
+Ordering of numbers<br>
+Smallest number<br>
+Largest number<br>
+Roman numerals<br>
+Practice problems
+
+
+  </div>
+
+  <button class="collapsible">Quadrilateral</button>
+  <div class="content">
+   Perimetre of a square<br>
+Perimeter of a rectangle<br>
+Perimeter of a triangle <br>
+Circumference of a circle<br>
+Perimeter of a rhombus<br>
+Perimeter of a parallelogram<br>
+Area of a square<br>
+Area of a rectangle<br>
+Area of a triangle<br>
+Counting unit squares to find area formula<br>
+Practice problems<br>
+     </div>
+  <button class="collapsible">SYMMETRY</button>
+  <div class="content">
+Symmetry<br>
+Line symmetry<br>
+Figures with multiple lines of symmetry<br>
+Reflection and symmetry<br>
+Rotational symmetry<br>
+Practice problems<br>
+  </div>
+
+  <button class="collapsible">Factors and Multiples</button>
+  <div class="content">
+Factors<br>
+Coprime numbers<br>
+Composite and prime numbers<br>
+Even and odd numbers<br>
+Prime factorization method<br>
+Prime factorization method for finding HCF<br>
+Cross division metjod for finding HCF<br>
+Lowest common multiple (LCM)<br>
+Cross division method for finding LCM<br>
+Practice problems<br>
+  </div>
+
+  <button class="collapsible">FRACTIONS</button>
+  <div class="content">
+ Fractions<br>
+Equivalent fractions<br>
+Simplifying a fraction<br>
+Like and unlike fraction<br>
+Unlike to like fraction<br>
+Proper and improper fraction<br>
+Comparison of fraction<br>
+Mixed to improper fraction<br>
+Improper to mixed fraction<br>
+Arrange fraction<br>
+Addition of fraction<br>
+Addition of mixed fraction<br>
+Subtraction of fraction<br>
+Subtraction of mixed fraction<br>
+Multiplication of fraction with a whole number<br>
+Multiplication of fraction with a fraction<br>
+Properties of multiplication of fraction<br>
+Dividing a fraction with a whole number<br>
+Dividing a whole number by a fraction<br>
+Dividing a fraction by a fraction<br>
+Properties of division of fraction<br>
+  </div>
+
+  <button class="collapsible">PATTERNS</button>
+  <div class="content">
+    Turns and patterns<br>
+Number patterns<br>
+Squares of numbers<br>
+Patterns of tiles<br>
+Practice problems
+  </div><br>
+
+  <button class="collapsible">DECIMALS</button>
+  <div class="content">
+   Decimals <br>
+Place value of decimals<br>
+Arrange decimal numbers
+Expanded form of decimals<br>
+Like and unlike decimals<br>
+Comparison of unlike decimals<br>
+Decimals to fraction<br>
+Fraction to decimal<br>
+Fraction to decimal (long division method)<br>
+Addition of decimals<br>
+Subtraction of decimals<br>
+Fraction to decimal<br>
+Multiplication of decimals by 10,100,1000,10000<br>
+Multiplication of decimals by a whole number<br>
+Multiplication of decimals by another decimal<br>
+Division of decimals by 10,100,1000,10000<br>
+Division of decimal by a whole number<br>
+Division of decimal by a decimal<br>
+Division of whole number by a decimal<br>
+Division of a whole number by a whole number (decimal)<br>
+  </div>
+
+
+                                                      
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            
+                                 <h3>Science</h3>
+        
+      <button class="collapsible">Every drop counts</button>
+  <div class="content">
+   Lakes and ponds to collect water<br>
+Manmade lakes<br>
+Wells and step wells<br>
+Natural resources of water<br>
+How water is recharged<br>   
+How do we get water?<br>
+Multiple choice questions<br>
+Question and answers
+    </div>
+
+      <button class="collapsible">Experiments with Water</button>
+  <div class="content">
+What floats – What sinks<br>
+Water can dissolve many solids<br>
+Sand does not dissolve in water<br>
+Density of water increases when more salt is added<br>
+Heterogeneous solution<br>
+Homogeneous solution<br>
+States of matter<br>
+Change in states of water<br>
+Distillation of salt water<br>
+Dead sea
+
+  </div>
+  <button class="collapsible">A Treat for Mosquitoes</button>
+  <div class="content">
+Life cycle of mosquito<br>
+Malaria<br>
+How to control mosquitoes<br>
+Mosquitoes that spread diseases<br>
+Diseases caused by mosquitoes
+  </div>
+
+  <button class="collapsible">Wall Tell Stories</button>
+  <div class="content">
+Kinds of houses<br>
+Water resources – 1<br>
+Water resources – 11<br>
+  </div>
+
+  <button class="collapsible">Sunitha in Space</button>
+  <div class="content">
+Earth<br>
+Internal structure of earth<br>
+Globe<br>
+View of earth from the moon<br>
+Sunitha Williams in space station<br>
+Spaceship<br>
+Gravitational force<br>
+The moon<br>
+Phases of moon <br>
+Stars<br>
+Falling of a feather and a coin – Experiment<br>
+Night sky<br>
+Planetary data
+  </div>
+
+  <button class="collapsible">When the Earth Shook !</button>
+  <div class="content">
+ Earthquake<br>
+Drought<br>
+Flood<br>
+Forest fire<br>
+Cyclone – 1<br>
+Volcano tectonic movements<br>
+  </div>
+
+  <button class="collapsible">What if it Finishes…?</button>
+  <div class="content">
+ Types of fuels<br>
+Uses of petroleum products<br>
+Mode of transport<br>
+A petrol pump<br>
+Solar energy<br>
+Pollution due to burning of wood<br>
+Air pollution  
+  </div>
+
+  <button class="collapsible">Blow Hot, Blow Cold</button>
+  <div class="content">
+ Breathe<br>
+Human respiratory system <br> 
+Diagram – Human respiratory system<br>
+Heart beat<br>
+Respiratory organs in some animals
+
+  </div>
+  <button class="collapsible">A Seed Tells Farmer’s Story</button>
+  <div class="content">
+Crops<br>
+Food from plants<br>
+Harvesting<br>
+Agricultural developments<br>  
+Making of cloth from cotton<br>
+Storage
+  </div>
+
+  <button class="collapsible">Whose Forests?</button>
+  <div class="content">
+Forest -1<br>
+Forest – 2<br>
+Soil erosion 
+  </div>
+
+                            
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+ <h3>English</h3>
+ <button class="collapsible">English</button>
+  <div class="content">
+ 
+Nouns<br>
+Adverbs<br>
+Adjectives<br>
+Prefixes and Suffixes<br>
+Possessive Pronoun<br>
+Pronouns<br>
+Contractions<br>
+Verbs<br>
+Verbs: Tenses<br>
+Sentence<br>
+Kinds of Phrases<br>
+Direct and Indirect Speech<br>
+Active and Passive Voice<br>
+Articles<br>
+Kinds of Clauses<br>
+Prepositions<br>
+Question Tag<br>
+Capital Letter and Punctuation<br>
+Proverb<br>
+Comprehension<br>
+Essay Writing<br>
+Dialogue<br>
+Letter Writing<br>
+Subject and Predicate<br>
+Paragraph<br>
+Collacation<br>
+Interjections<br>
+Homophone<br>
+Performane chart<br>
+Synonyms and Antonyms<br>
+Diary Writting<br>
+Conjunctions
+</div>
+
+        
+  
+</div>
+                    </div></div>
+                    <div id="class6" style="display: none;">
+                     <center><h2>CLASS -6 </h2></center>
+                    <div class="row mb-5 pb-5">
+                                              <div class="col-xl-4 col-lg-5">
+                            
+                            
+                                <h3>MATHEMATICS</h3>
+                                 
+  <button class="collapsible">Whole Numbers</button>
+  <div class="content">
+  Whole numbers<br>
+Addition on the number line<br>
+Subtraction on the number line<br>
+Multiplication on the number line<br>
+Division on the number line <br>
+Addition properties of whole numbers<br>
+Subtraction properties of whole numbers<br>
+Multiplication properties of whole numbers<br>
+Division properties of whole numbers<br>
+ Patterns in whole numbers   
+  
+</div>
+ 
+  <button class="collapsible">Knowing Our Numbers</button>
+  <div class="content">
+    Comparing numbers<br>
+Forming largest number from the given digits<br>
+Forming the smallest number from the given digits<br>
+Introducing 10000<br>
+Place value<br>
+Indian place value system<br>
+International place value system<br>
+Addition of large numbers<br>
+ Subtraction of large numbers<br>
+ Multiplication of large numbers<br>
+ Estimating by rounding off<br>
+ To estimate sum or difference<br>
+ To estimate products<br>
+ Using brackets<br>
+ Expanding brackets<br>
+ Roman numerals  
+  </div>
+ 
+ 
+  <button class="collapsible">Bodmas</button>
+  <div class="content">
+   Bodmas<br>
+Simplify 6x(2+2)^2 / 4+2<br>
+Simplify 16-3(8-3)^2/5<br>
+Simplify 4-3(4-2(6-3))/2<br>
+Simplify 16/2(8-3(4-2))+1
+     </div>
+
+
+  <button class="collapsible">Playing with Numbers</button>
+  <div class="content">
+  Factors and multiples<br>
+Test for divisibility<br>
+Co prime numbers<br>
+Prime factorization method<br>
+Prime factorization method for finding HCF<br>
+Cross division method for finding HCF<br>
+How to solve problems of HCF-1<br>
+How to solve problems on HCF -2<br>
+Lowest common multiple ( L C M)<br>
+: Cross division method for finding L C M<br>
+ Problems on L C M<br>
+ Relation between H C F and L C M
+  </div>
+
+  <button class="collapsible">Basic Geometrical Ideas</button>
+  <div class="content">
+Points, line, line segment and ray<br>
+Open curve and closed curve<br>
+Position in a plane figure<br>
+Polygon<br>
+Polygons: sides and diagonals<br>
+Angles<br>
+Triangles<br>
+Quadrilaterals<br>
+Circles<br>
+Parts of a circle
+  </div>
+
+  <button class="collapsible">Understanding Elementary Shapes</button>
+  <div class="content">
+   Measuring line segments <br>
+   Comparison using ruler and divider<br>
+Angles- ‘Right ‘ and ‘Straight’<br>
+Angles- ‘Acute’, ‘Obtuse’ and ‘reflex’<br>
+Measuring angles using a protractor<br>
+Construction of angle using a protractor<br>
+Construction of angle using set squares and ruler<br>
+Perpendicular lines<br>
+Draw a perpendicular using set squares<br>
+ Triangles<br>
+ Naming triangles based on angles and sides<br>
+ Quadrilaterals<br>
+ Polygons<br>
+ Three dimensional shapes : Faces, edges and vertices
+  </div>
+
+  <button class="collapsible">Integers</button>
+  <div class="content">
+   Integers <br>
+   Representation of integers on a number line<br>
+Ordering of integers<br>
+Addition of integers<br>
+Addition of integers on a number line<br>
+Subtraction of integers<br>
+Subtraction of integers with the help of a number line
+   </div>
+
+  <button class="collapsible">Fractions</button>
+  <div class="content">
+   A fraction<br>
+Fraction on the number line<br>
+Proper and improper fractions<br>
+Mixed to improper fraction<br>
+Improper to mixed fraction<br>
+Equivalent fractions<br>
+Simplest form of a fraction<br>
+Like and unlike fractions<br>
+Unlike to like fractions<br>
+ Compare fractions<br>
+ Addition of like and unlike fractions<br>
+ Addition of mixed fractions<br>
+ Addition of mixed fractions : Solved problem<br>
+ Subtraction of like and unlike fractions<br>
+ Subtraction of mixed fractions<br>
+ Subtraction of mixed fractions: Solved problem<br>
+ Addition and subtraction in fractions
+
+  </div>
+     <button class="collapsible">Decimals</button>
+  <div class="content">
+   Decimals<br>
+Tenths, Hundredths and thousandths<br>
+Representing decimals on a number line<br>
+Like and unlike decimals<br>
+Comparison of like and unlike decimals<br>
+Expanded form of decimals<br>
+Arrange decimals in ascending and descending order<br>
+Convert decimal to fraction<br>
+Convert fraction to decimal<br>
+ Uses of decimals: Conversion of units<br>
+ Addition of numbers with decimals<br>
+ Subtraction of numbers with decimals
+
+  </div>
+   <button class="collapsible">Mensuration</button>
+  <div class="content">
+ Perimeter of a rectangle<br>
+Perimeter of a square<br>
+Perimeter of a triangle<br>
+Perimeter of irregular shapes<br>
+Area of a square <br>
+Area of irregular shape
+
+  </div>
+  <button class="collapsible">Algebra</button>
+  <div class="content">
+ Algebra<br>
+Matchstick patterns<br>
+More match stick patterns: Triangle<br>
+Match stick pattern of a square<br>
+Use of variables in common rules : Perimeter of a square<br>
+Use of variable in common rules: Perimeter of a rectangle<br>
+Use of variables in common rules : Rules from Arithmetic<br>
+Use of variables in common rules<br>
+Expressions with variables<br>
+ What is an equation?<br>
+ Solution of an equation
+  </div>
+
+   <button class="collapsible">Ratio and Proportion</button>
+  <div class="content">
+Ratio<br>
+Simplification of ratio<br>
+Equivalent ratio<br>
+Ratio: Solved problems<br>
+Proportion<br>
+Compare proportions<br>
+Unitary method<br>
+Unitary method : Solved problems<br>
+Unitary method : How to solve a problem
+  </div> 
+     <button class="collapsible">Symmetry</button>
+  <div class="content">
+Symmetry<br>
+Making symmetric figures<br>
+Line symmetry<br>
+Figures with multiple lines of symmetry<br>
+Reflection and symmetry
+  </div>                                                 
+       <button class="collapsible">Practical Geometry </button>
+  <div class="content">
+   A circle<br>
+Construction of a circle of given radius.<br>
+A line segment<br>
+Construction of a line segment of given length<br>
+Perpendiculars<br>
+Perpendicular to the line through a point on it<br>
+Draw a perpendicular using a ruler and compass<br>
+Perpendicular to a line through a point not on it<br>
+The perpendicular bisector of a line segment<br>
+ Constructing an angle of given measure<br>
+ Constructing the copy of an angle of unknown measure<br>
+ Bisector of an angle<br>
+ Constructing a 60 degree angle<br>
+ Constructing a 30 degree angle<br>
+ Constructing a 120 degree angle<br>
+ Constructing a 90 degree angle
+  </div>      
+  <button class="collapsible"> Data Handling
+ </button>
+  <div class="content">
+Recording data<br>
+Organisation of data<br>
+Interpretation of tally marks<br>
+Pictograph<br>
+Interpretation of pictograph<br>
+A bar graph<br>
+How to draw a bar graph<br>
+Bar graph
+  </div>                                                                                            
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            
+                                 <h3>Science</h3>
+        
+
+  <button class="collapsible">Food: Where does it come from ?</button>
+  <div class="content">
+   Food from plants<br>
+Cereals and pulses<br>
+Sprouted food<br>
+Food from animals<br>
+Honey from nectar<br>
+Herbivores<br>
+Carnivores<br>
+Omnivores
+    </div>
+
+  <button class="collapsible">Fibre to fabric</button>
+  <div class="content">
+Variety in fabrics<br>
+Some plant fibres<br>
+Spinning cotton yarn<br>
+Yarn to fabric<br>
+Knitting<br>
+History of clothing material
+  </div>
+
+  <button class="collapsible">Sorting materials into groups</button>
+  <div class="content">
+Objects around us<br>
+Properties of materials<br>
+Classification based on properties<br>
+Floating and sinking  <br>
+Transparent, opaque and translucent
+  </div>
+  <button class="collapsible">Separation of substances</button>
+  <div class="content">
+Methods of separation<br>
+Sieving<br>
+Separation of butter from curd  <br>
+Sedimentation and decantation<br>
+Sedimentation by loading<br>
+Filtration<br>
+Evaporation<br>
+More than one method of separation – Distillation<br>
+Dissolving and saturation<br>
+ Magnetic separation of substances
+  </div>
+  <button class="collapsible">Body movements</button>
+  <div class="content">
+Human body and its movements: Joints<br>
+Ball and socket joints   <br>
+Types of joints<br>
+Fixed joints<br>
+Human skeletal system<br>
+Different types of bones<br>
+Cartilage<br>
+Muscles<br>
+Muscle contraction<br>
+Movement of earth worm<br>
+Movement of snail<br>
+Movement of cockroach<br>
+Movement of bird<br>
+Movement of fish<br>
+Movement of snake
+
+  </div>
+  <button class="collapsible">Getting know to plants</button>
+  <div class="content">
+  Types of plants – herbs, shrubs, trees<br>
+ Creepers and climbers<br>
+ Parts of a Plant<br>
+ Stem<br>
+ Parts of leaf<br>
+ Leaf venation<br>
+ Transpiration<br>
+ Photosynthesis   <br>
+ How do plants store food?<br>
+ Parts and functions of root<br>
+ Plants without root will not survive- Test<br>
+ Flowers<br>
+ Stamen and pistil
+  </div>
+  <button class="collapsible">The living organisms and their surroundings</button>
+  <div class="content">
+ Habitat and adaptation<br>
+Biotic and abiotic components<br>
+Terrestrial habitats<br>
+Adaptation of camels in deserts<br>
+Adaptation of other animals in the desert<br>
+Adaptation of desert plants<br>
+Mountain regions<br>
+Trees in the mountain regions<br>
+Adaptation of animals in the grass land<br>
+Adaptation of animals in the polar region<br>
+Aquatic habitat<br>
+Ponds and lakes<br>
+Adaptation of frog <br>
+Characteristics of living organisms<br>
+Organisms respire<br>
+Respiration of plants<br>
+Stimuli<br>
+Excretion in organisms<br>
+Living organisms reproduce<br>
+Living things move  
+  </div>
+
+  <button class="collapsible">Motion and measurement of distance
+</button>
+  <div class="content">
+Mode of transport<br>
+Using hand span to measure<br>
+Standard units of measurements<br>
+Correct measurement of length<br>
+Measuring the length of a curved line<br>
+Rectilinear motion<br>
+Circular motion -11<br>
+Circular motion<br>
+Uniform circular motion  <br>
+ Motion of a cylinder on ground<br>
+ Oscillatory motion<br>
+ Different motion in same time<br>
+ Simple pendulum
+  </div>
+
+  <button class="collapsible">Light, shadow and reflection</button>
+  <div class="content">
+Transparent, opaque and translucent objects<br>
+Shadow<br>
+Shape and size of shadow<br>
+Pinhole camera  <br>
+Light travels in a straight Line<br>
+Refelction of light<br>
+Periscope
+  </div>
+
+  <button class="collapsible">Eletric currents</button>
+  <div class="content">
+Electric cell   <br>
+An electric bulb<br>
+Bulb connected to an electric cell<br>
+An electric circuit<br>
+An electric switch<br>
+Inside view of a torch<br>
+Electric conductors and insulators
+  </div>
+<button class="collapsible">Fun with magnets</button>
+  <div class="content">
+Magnetic materials<br>
+Poles of a magnet<br>
+Magnetic Compass<br>
+Earth as a magnet<br>
+Make your own magnet<br>
+Temporary magnets<br>
+Attraction and repulsion between magnets
+  </div>
+  <button class="collapsible">Air around us</button>
+  <div class="content">
+Is air present everywhere?<br>
+Air occupies space<br>
+Air has weight<br>
+Water contains air<br>
+Water vapour<br>
+Soil has air in it<br>
+How trees replace oxygen back to the atmosphere ?<br>
+A wind mill 
+  </div>
+<button class="collapsible">Garbage in,Garbage out</button>
+  <div class="content">
+Dealing with garbage<br>
+orting of garbage  <br>
+Composting<br>
+Vermi composting<br>
+Use minimum plastic
+  </div>
+  <button class="collapsible">Components of Food</button>
+  <div class="content">
+Nutrients of food <br>
+Test for carbohydrates<br>
+Test for protein<br>
+Test for fats<br>
+Contents of different food items<br>
+Balanced diet<br>
+Deficiency Diseases
+  </div>
+   <button class="collapsible">Sources of Water</button>
+  <div class="content">
+Where do we get water from?<br>
+Water cycle<br>
+Loss of water by plants<br>
+TPOIC 4: Evaporation<br>
+Evaporation depends on several factors<br>
+How clouds are formed<br>
+Water back to the ocean<br>
+Flood<br>
+Drought<br>
+ Rain water harvesting
+  </div>  
+  <button class="collapsible">Changes around us</button>
+  <div class="content">
+Other ways to bring change<br>
+Types of changes<br>
+Burning of a candle and melting of wax<br>
+Physical change<br>
+Chemical change
+  </div>                       
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+ <h3>English</h3>
+ <button class="collapsible">English</button>
+  <div class="content">
+ 
+Nouns<br>
+Adverbs<br>
+Adjectives<br>
+Prefixes and Suffixes<br>
+Possessive Pronoun<br>
+Pronouns<br>
+Contractions<br>
+Verbs<br>
+Verbs: Tenses<br>
+Sentence<br>
+Kinds of Phrases<br>
+Direct and Indirect Speech<br>
+Active and Passive Voice<br>
+Articles<br>
+Kinds of Clauses<br>
+Prepositions<br>
+Question Tag<br>
+Capital Letter and Punctuation<br>
+Proverb<br>
+Comprehension<br>
+Essay Writing<br>
+Dialogue<br>
+Letter Writing<br>
+Subject and Predicate<br>
+Paragraph<br>
+Collacation<br>
+Interjections<br>
+Homophone<br>
+Performane chart<br>
+Synonyms and Antonyms<br>
+Diary Writting<br>
+Conjunctions
+</div>
+
+        
+  
+</div>
+                    </div></div>
+                    
+                    <div id="class7" style="display: none;">
+                     <center><h2>CLASS-7</h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            <h3>MATHEMATICS</h3>
+                                 
+  <button class="collapsible">Integers</button>
+  <div class="content">
+    Addition of integers<br>
+Addition problems<br>
+Subtraction of integers<br>
+Subtraction problems<br>
+Closure property under addition<br>
+Closure property under subtraction<br>
+Commutative property for addition<br>
+Associative property<br>
+Additive identity<br>
+ Multiplication of integers<br>
+ Multiplication problems<br>
+ Product of three or more negative integers<br>
+ Properties of multiplication of integers<br>
+ Commutativity of multiplication<br>
+ Multiplication by zero<br>
+ Multiplicative identity<br>
+ Associativity for multiplication<br>
+ Distributive property<br>
+ Making multiplication easier<br>
+ Division of integers<br>
+: Division problems<br>
+ Properties of division of integers 
+  </div>  
+   <button class="collapsible">Fractions</button>
+  <div class="content">
+Multiplication of a fraction by a whole number<br>
+Multiplication of a fraction by a fraction<br>
+Properties of multiplication of fraction<br>
+Solving a word problem<br>
+Division of whole number by a fraction<br>
+Division of a fraction by a whole number<br>
+Division of a fraction by another fraction<br>
+Properties of division of fraction<br>
+Simplify the fraction
+  </div>
+
+  <button class="collapsible">Decimals</button>
+  <div class="content">
+Collection of data<br>
+Organisation of data<br>
+Average<br>
+Average – Solved problem<br>
+Arithmetic mean<br>
+Range<br>
+Mode<br>
+Tally charts<br>
+Median<br>
+ Bar graphs<br>
+ How to draw a bar graph<br>
+ How to draw a bar graph -2<br>
+ Drawing a double bar graph<br>
+ Chances and probability<br>
+ Probability line<br>
+ Probability when different objects are involved
+    </div>
+
+
+
+
+  <button class="collapsible">Rational Numbers</button>
+  <div class="content">
+What equation is?<br>
+Solving an equation<br>
+More equations<br>
+Application of simple equations to practical situations<br>
+Application of simple equations to practical situations<br>
+Application of simple equations to practical situations
+  </div>
+
+
+
+
+  <button class="collapsible">Powers and Exponents</button>
+  <div class="content">
+ Point, line, line segment and ray<br>
+Name of angles according to their measurement<br>
+Related angles<br>
+Angles made by a transversal<br>
+Transversal of parallel lines<br>
+Construction of angles using set squares and ruler
+  </div>
+
+
+
+
+  <button class="collapsible">Algebra</button>
+  <div class="content">
+A triangle<br>
+Medians of a triangle<br>
+Altitude of a triangle<br>
+Properties of triangles<br>
+Kinds of triangle<br>
+Right angled triangles and Pythagoras property
+  </div>
+
+
+
+
+  <button class="collapsible">Ratio and Proportion</button>
+  <div class="content">
+Congruence of various shapes<br>
+Congruence of triangles
+  </div>
+
+  <button class="collapsible">Percentage</button>
+  <div class="content">
+Ratio<br>
+Simplification of ratio<br>
+Proportion<br>
+Direct variation<br>
+Inverse variation<br>
+Percentage<br>
+Converting fractional numbers to percentage<br>
+Converting decimals to percentage<br>
+Converting percentage to fractions<br>
+ Converting percentage to decimals<br>
+ Converting percentage to “ how many”<br>
+ Express a quantity as the percentage of another<br>
+ Ratios to percents<br>
+ Increase measured as percent<br>
+ Decrease measured as percent<br>
+ Converting percentage into a ratio<br>
+ Profit or loss as a percentage<br>
+ Simple interest<br>
+ Interest for multiple years
+  </div>
+ </div>
+  <div class="col-xl-4 col-lg-5">
+ <h3>English</h3>
+ <button class="collapsible">English</button>
+  <div class="content">
+ 
+Nouns<br>
+Adverbs<br>
+Adjectives<br>
+Prefixes and Suffixes<br>
+Possessive Pronoun<br>
+Pronouns<br>
+Contractions<br>
+Verbs<br>
+Verbs: Tenses<br>
+Sentence<br>
+Kinds of Phrases<br>
+Direct and Indirect Speech<br>
+Active and Passive Voice<br>
+Articles<br>
+Kinds of Clauses<br>
+Prepositions<br>
+Question Tag<br>
+Capital Letter and Punctuation<br>
+Proverb<br>
+Comprehension<br>
+Essay Writing<br>
+Dialogue<br>
+Letter Writing<br>
+Subject and Predicate<br>
+Paragraph<br>
+Collacation<br>
+Interjections<br>
+Homophone<br>
+Performane chart<br>
+Synonyms and Antonyms<br>
+Diary Writting<br>
+Conjunctions
+</div>
+
+        
+  
+</div>
+                       
+                    </div></div>
+
+                    <div id="class8" style="display: none;">
+                     <center><h2>CLASS -8</h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            <h3>MATHEMATICS</h3>
+                                 
+  <button class="collapsible">RATIONAL NUMBERS</button>
+  <div class="content">
+    
+Rational numbers<br>
+Problems using commutative and associative property<br>
+The role of zero<br>
+The role of 1<br>
+Negative of a number<br>
+Reciprocal<br>
+Distributivity of multiplication over addition for rational numbers<br>
+Problems on additive inverse<br>
+Rational numbers between two rational numbers<br>
+Problems on rational numbers 
+  </div>  
+   <button class="collapsible">LINEAR EQUATION IN ONE VARIABLE</button>
+  <div class="content">
+Algebra<br>
+Defenition of an Equation  <br>
+Linear equation in one variable<br>
+Solving equations<br>
+Some applications 1<br>
+Some applications 2<br>
+Some applications 3<br>
+Solving equations having the variable on both sides<br>
+Some more applications<br>
+Reducing equations to simpler form<br>
+Equations reducible to the linear form
+  </div>
+
+  <button class="collapsible">QUDRILATERALS</button>
+  <div class="content">
+Polygons<br>
+Polygons and diagonals<br>
+Convex and concave polygons<br>
+Regular and irregular polygons   <br>
+Angle sum property<br>
+Sum of the measures of the exterior angles of a polygon<br>
+Trapezium<br>
+Kite<br>
+Parallelogram<br>
+Elements of a parallelogram<br>
+Angles of a parallelogram<br>
+Problems related to parallelogram<br>
+Diagonals of a parallelogram<br>
+Problem<br>
+Rhombus<br>
+     </div>
+
+
+
+
+  <button class="collapsible">PRACTICAL GEOMETRY</button>
+  <div class="content">
+Problem on constructing a quadrilateral 1<br>
+Problem on constructing a quadrilateral 2<br>
+Problem on constructing a quadrilateral 3<br>
+Problem on constructing a quadrilateral 4<br>
+Some special cases<br>
+problem on constructing a quadrilateral
+  </div>
+
+
+
+
+  <button class="collapsible">DATA HANDLING</button>
+  <div class="content">
+Recording data<br>
+Organising data<br>
+Collection of data<br>
+Bar graph<br>
+Circle graph or Pie chart<br>
+Drawing pie charts<br>
+Problems<br>
+Chance and probability  <br>
+Probability line<br>
+Equally likely outcomes<br>
+Probability when different objects are involved<br>
+Outcomes as events<br>
+Chance and probability related to real life
+  </div>
+
+
+
+
+  <button class="collapsible">SQUARES AND SQUARE ROOTS</button>
+  <div class="content">
+Properties of square numbers<br>
+Some more interesting patters<br>
+Finding the square of a number<br>
+Problem to find the square<br>
+Other patterns in square<br>s
+Pythagorean triplets<br>
+Square roots<br>
+Finding square roots<br>
+Finding square root through repeated subtraction<br>
+Finding square root through prime factorisation<br>
+Finding square root by division method<br>
+Square roots of decimals<br>
+Estimating square root
+  </div>
+
+
+
+
+  <button class="collapsible">CUBES AND CUBE ROOTS</button>
+  <div class="content">
+Cubes  <br>
+Cube root through prime factorisation method<br>
+Problem on finding perfect cube<br>
+Problems<br>
+Cube roots<br>
+Problems on finding cube roots<br>
+Cube root of a cube number<br>
+problem<br>
+  </div>
+
+  <button class="collapsible">COMPARINING QUANTITIES</button>
+  <div class="content">
+Recalling ratios and percentages<br>
+Unitary method<br>
+Finding the increase or decrease percent<br>
+Finding discounts<br>
+Estimation in percentages<br>
+Prices related to buying and selling<br>
+Finding cost price/Selling price, profit percentage, loss percentage<br>
+Sales tax/ Value added tax<br>
+Compound interest<br>
+Deducing a formula for compound interest<br>
+Rate compounded annually or half yearly<br>
+Applications of compound interest formula
+  </div>
+
+
+
+
+
+  <button class="collapsible">ALGEBRAIC EXPRESSIONS AND IDENTITIES</button>
+  <div class="content">
+What are expressions?<br>
+Terms, factors and coefficients<br>
+Monomials, binomials and polynomials<br>
+Like and unlike terms<br>
+Addition and subtraction of algebraic expressions<br>
+Multiplying a monomial by a monomial<br>
+Multiplying three or more monomials<br>
+Multiplying a monomial by a binomial<br>
+Multiplying a monomial by a trinomial<br>
+Multiplying a binomial by a binomial<br>
+Multiplying a binomial by a trinomial<br>
+What is an identity?<br>
+Standard identities<br>
+Applying identities
+  </div>
+
+
+  <button class="collapsible">VISUALIZING SOLID SHAPES</button>
+  <div class="content">
+Views of 3D shapes  <br>
+Mapping space around us<br>
+Faces, edges and vertices<br>
+Visualising solid objects
+  </div>
+
+
+
+
+  <button class="collapsible">MENSURATION</button>
+  <div class="content">
+Area of trapezium<br>
+Problem on areas of trapezium<br>
+Area of a general quadrilateral<br>
+Problem on finding area of quadrilateral<br>
+Area of special quadrilaterals  <br>
+Problem on finding area of rhombus<br>
+Area of a polygon<br>
+Solid shapes<br>
+Surface area of cuboid<br>
+Surface area of cube<br>
+Surface area of right circular cylinder<br>
+Problem<br>
+Volume of a cuboid<br>
+Volume of a cube<br>
+Volume of a cylinder<br>
+Volume and capacity<br>
+Problem<br>
+Volume of triangular prism<br>
+Volume of combined figures<br>
+Frustum of cone<br>
+Area of field<br>
+Surface area of combination of solids<br>
+Area of composite figure<br>
+Area of combination of plane figures
+
+  </div>
+
+
+
+
+  <button class="collapsible">EXPONENTS AND POWERS</button>
+  <div class="content">
+ Numbers with negative exponents<br>
+ Laws of exponents<br>
+ Problem on finding the values<br>
+ Expressing numbers in the standard form<br>
+ Comparing very large and small numbers<br>
+ Problem
+  </div>
+
+
+
+  <button class="collapsible">DIRECT AND INVERSE PROPORTIONS</button>
+   <div class="content">
+Direct proportion<br>
+Proportion<br>
+Problem 1<br>
+Problem 2<br>
+Inverse proportion<br>
+
+  </div>
+
+
+  <button class="collapsible">FACTORISATION</button>
+  <div class="content">
+Method of common factors<br>
+Problem on factorisation 1<br>
+Problem on factorisation 2<br>
+Factorisation by regrouping terms<br>
+Factorisation using identities<br>
+Problem on factorisation 3<br>
+Problem on factorisation 4<br>
+Problem on factorisation 5<br>
+Factors of the form (x + a) (x + b)<br>
+Problem on obtaining factors<br>
+Divison of algebraic expression<br>
+Division of a monomial by another monomial<br>
+Division of a polynomial by a monomial<br>
+Division of a polynomial by a polynomial
+  </div>
+
+
+
+  <button class="collapsible">GRAPH</button>
+  <div class="content">
+A bar graph<br>
+A histogram<br>
+Problem 1<br>
+Coordinates  <br>
+Problem 2<br>
+Problem 3
+  </div>
+  
+
+
+
+  <button class="collapsible">GRAPH</button>
+  <div class="content">
+Numbers in general form<br>
+Games with numbers<br>
+Letters for digits<br>
+Tests of divisibility by 10<br>
+Divisibility by 5<br>
+Divisibility by 2<br>
+Divisibility by 9 and 3<br>
+  </div>
+                                                    
+                      </div>
+                        <div class="col-xl-4 col-lg-5">
+                           <h3>Physics</h3>
+                             <button class="collapsible">FORCE AND PRESSURE</button>
+  <div class="content">
+Force a push or a pull<br>
+Forces are due to an interaction<br>
+Exploring forces<br>
+A Force can change the state of motion<br>
+A force can change the shape of an object<br>
+Muscular force<br>
+Friction   <br>
+Non contact forces<br>
+Pressure<br>
+Pressure exerted by liquids and gases.<br>
+Atmospheric pressure
+
+  </div>
+
+        
+  <button class="collapsible">FRICTION</button>
+  <div class="content">
+
+Force of friction<br>
+Sliding friction<br>
+Rolling friction<br>
+Increase of friction<br>
+Reduction of friction   <br>
+Liquid and air friction<br>
+  </div>
+
+
+
+ 
+  <button class="collapsible">SOUND</button>
+  <div class="content">
+Sound is produced by a vibrating body.<br>
+Musical instruments produce sound<br>
+Sound produced by humans  <br>
+Sound needs a medium for propagation<br>
+We hear sound through our ears<br>
+Wave length , amplitude, time Period and frequency of a sound<br>
+Loudness of sound<br>
+Pitch of sound<br>
+Music and noise<br>
+Audible and inaudible sound<br>
+Noise pollution<br>
+How to control noise pollution
+
+</div>  
+
+
+ 
+  <button class="collapsible">CHEMICAL EFFECTS OF ELECTRIC CURRENT</button>
+  <div class="content">
+Do liquids conduct electricity<br>
+Chemical effects of electric current<br>
+Electroplating<br>
+LED<br>
+Electrode  
+  </div>
+        
+
+
+
+  <button class="collapsible">SOME NATURAL PHENOMENA</button>
+  <div class="content">
+Charging by rubbing<br>
+Electroscope<br>
+The story of lightning<br>
+Lightning conductor<br>
+Earth quake<br>
+Seismic waves  <br>
+Seismograph<br>
+Structure of earth<br>
+Earth plates<br>
+Tsunami  
+  </div>
+
+
+
+
+  <button class="collapsible">LIGHT</button>
+  <div class="content">
+Laws of reflection<br>
+Lateral inversion<br>
+Regular and irregular reflection<br>
+Multiple images<br>
+Dispersion<br>
+Recombination of colours<br>
+What is inside our eyes?  <br>
+Structure of eye<br>
+Cataract<br>
+Braille system
+
+
+</div>
+
+
+
+  <button class="collapsible">LIGHT</button>
+  <div class="content">
+The Moon<br>
+Phases of the Moon<br>
+The Moon’s surface<br>
+The stars<br>
+Constellations<br>
+The solar system<br>
+The sun and planets<br>
+Asteroids  <br>
+Comets<br>
+Meteors<br>
+Artificial satellites<br>
+Orion
+
+  </div>
+
+
+
+
+
+  <button class="collapsible">STARS AND THE SOLAR SYSTEM</button>
+  <div class="content">
+The Moon<br>
+Phases of the Moon<br>
+The Moon’s surface<br>
+The stars<br>
+Constellations<br>
+The solar system<br>
+The sun and planets<br>
+Asteroids  <br>
+Comets<br>
+Meteors<br>
+Artificial satellites<br>
+Orion
+
+
+</div>
+</div>
+                        <div class="col-xl-4 col-lg-5">
+                                          <h3>CHEMISTRY</h3>
+        
+        
+  <button class="collapsible">SYNTHETIC FIBRES AND PLASTICS</button>
+  <div class="content">
+What are synthetic fibres?<br>
+Types of synthetic fibres<br>
+Characteristic of synthetic fibres<br>
+Plastics<br>
+Types of plastics<br>
+Characteristic properties of plastic<br>
+Plastics and the environment  
+  </div>
+
+        
+  <button class="collapsible">METALS AND NON METALS</button>
+  <div class="content">
+Physical properties of metals<br>
+Physical properties of non metals<br>
+Chemical properties of metals – Reaction of metals with oxygen<br>
+Reaction of metals with water<br>
+Reaction of metals with acids<br>
+Displacement reactions  <br>
+Chemical properties of non metals
+  </div>
+
+
+
+ 
+  <button class="collapsible">COAL AND PETROLEUM</button>
+  <div class="content">
+Coal<br>
+Story of coal<br>
+Petroleum<br>
+Refining of petroleum<br>
+Petroleum products and their uses<br>
+Natural gas  
+  </div>
+  
+
+
+ 
+  <button class="collapsible">COMBUSTION AND FLAME</button>
+  <div class="content">
+What is combustion?<br>
+Air is needed for combustion<br>
+Ignition temperature<br>
+How do we control fire?<br>
+Types of combustion<br>
+Flame  <br>
+Structure of a flame<br>
+What is a fuel?<br>
+Fuel efficiency<br>
+Harmful products due to the burning of fuel
+  </div>              
+   </div>
+                             
+                            
+                            <div class="col-xl-4 col-lg-5">
+                            <h3>BIOLOGY</h3>
+        
+        
+  <button class="collapsible">
+MICROORGANISMS- FRIEND AND FOE</button>
+  <div class="content">
+Microorganisms<br>
+Friendly microorganisms<br>
+Commercial use of microorganisms<br>
+Medicinal uses of microorganisms<br>
+Vaccine<br>
+Disease causing microorganisms in humans<br>
+Communicable diseases<br>
+Diseases spread by carriers<br>
+Disease causing microorganisms in animals  <br>
+Disease causing microorganisms in plants<br>
+Food poisoning<br>
+Food preservation<br>
+Nitrogen fixation<br>
+Nitrogen cycle
+  </div>
+
+        
+  <button class="collapsible">
+CONSERVATION OF PLANTS AND ANIMALS</button>
+  <div class="content">
+Deforestation and its causes<br>
+Consequences of deforestation<br>
+Conservation of forest and wild life<br>
+Biosphere reserve<br>
+Flora and fauna<br>
+Extinction and endangered species<br>
+Sanctuary<br>
+National park<br>
+Red data book<br>
+Migration  <br>
+Recycling of paper<br>
+Reforestation
+  </div>
+
+
+
+ 
+  <button class="collapsible">CELL STRUCTURE AND FUNCTIONS</button>
+  <div class="content">
+Discovery of the cell
+The cell
+Organisms show variety in cell number
+Different shape of cells
+Different size of cells
+Cell function
+Parts of the plant cell  
+Parts of the animal cell
+Prokaryotic cells and Eukaryotic cells
+  </div>
+ 
+
+
+ 
+  <button class="collapsible">REPRODUCTION IN ANIMALS</button>
+  <div class="content">
+Sexual reproduction<br>
+Male reproductive organs<br>
+Structure of a sperm<br>
+Female reproductive organs<br>
+Ovum<br>
+Fertilization  <br>
+External fertilization<br>
+Development of an embryo<br>
+IVF (In vitro fertilization)<br>
+Birth of a baby<br>
+Viviparous and oviparous animals<br>
+Young ones to adults<br>
+Life cycle of a silk worm<br>
+Asexual reproduction – Budding in hydra<br>
+Binary fission in amoeba<br>
+Cloning
+  </div>
+         
+
+
+ 
+  <button class="collapsible">REACHING THE AGE OF ADOLESCENCE</button>
+  <div class="content">
+Adolescence and puberty<br>
+Ovulation<br>
+Reproductive phase of life in humans<br>
+Role of sex hormones.<br>
+Sex determination in humans  <br>
+Hormones other than sex hormones<br>
+Reproductive health<br>
+Say no to drugs<br>
+AIDS caused by HIV
+  </div>
+ 
+
+
+
+  <button class="collapsible">REACHING THE AGE OF ADOLESCENCE</button>
+  <div class="content">
+Air pollution<br>
+Green House effect  <br>
+Global warming<br>
+Ozone layer depletion<br>
+Green house gases<br>
+Controlling pollution<br>
+Water pollution<br>
+Potable water
+</div>
+   
+
+
+
+
+  <button class="collapsible">CROP PRODUCTION AND MANAGEMENT</button>
+  <div class="content">
+Agricultural practices<br>
+Crop pattern<br>
+Preparation of soil<br>
+Sowing<br>
+Adding manure and fertilizers<br>
+Irrigation – Traditional methods<br>
+Irrigation – Modern methods  <br>
+Protection from weeds<br>
+Harvesting<br>
+Storage<br>
+Food from animals
+</div>
+ 
+
+                             
+                           
+                        </div>
+                    </div></div>
+                    <div id="class9" style="display: none;">
+                     <center><h2>CLASS -9</h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                         <h3>MATHEMATICS</h3>
+                                 
+  <button class="collapsible">Number Systems</button>
+  <div class="content">
+    
+ Introduction<br>
+ Whole numbers<br>
+ Rational numbers<br>
+ Equivalent rational number<br>
+ Comparison of rational number<br>
+ Rational numbers between two rational numbers<br>
+ Rationalising factor and rationalisation<br>
+ Problems on Rational Numbers Set 11<br>
+ Problems on Rational Numbers Set 2<br>
+ Problems on Rational Numbers Set 3<br>
+ Irrational numbers<br>
+ Square Root of 2 is an Irrational Number<br>
+ Representing Irrational Numbers in Number Line<br>
+ Problems on Rational and Irrational Numbers<br>
+ Real Numbers<br>
+ Problems on real Numbers and their decimal expansion<br>
+ Problems on decimal expansions<br>
+ Problems on express in the form p / q set 1<br>
+ Problems on express in the form p / q set 2<br>
+ Problems on express in the form p / q set 3<br>
+ Representing real numbers on the number line<br>
+ Operations on real numbers<br>
+ Problems on division of real numbers<br>
+ Simplification of real numbers<br>
+ Problems to rationalise the denominator<br>
+ Concept of exponents<br>
+ Laws of exponents<br>
+ Problems on Exponents<br>
+ Simplification of exponents
+ 
+  
+  </div>
+
+
+
+  <button class="collapsible">POLYNOMIALS</button>
+  <div class="content">
+   Introduction
+
+ Algebric expression<br>
+ Value of an algebraic<br>
+ Degree of a polynomial<br>
+ Example of degree of a polynomial<br>
+ Monomials, Binomials and Trinomials<br>
+ Problems on  degree of a polynomial<br>
+ Linear polynomial<br>
+ Quadratic polynomial<br>
+ Cubic polynomial<br>
+ Geometrical meaning of  the zeroes of a polynomial<br>
+ Problems on polynomial<br>
+ Remainder theorem<br>
+ Example based on Remainder theorem<br>
+ Problems using Remainder theorem<br>
+  Problems on division of polynomials<br>
+  Factorisation of polynomials<br>
+  Problem Using Factor Theorem<br>
+  Algebraic identities<br>
+  Problems on Factorization Using Identity – 1<br>
+  Problems on Factorization Using Identity – 2<br>
+  Problems on Factorization Using Identity – 3<br>
+  Problems on Factorization Using Identity – 4<br>
+  Problems on Factorization Using Identity – 5<br>
+  Problems on Factorization Using Identity – 6<br>
+  Problems on Factorization Using Identity – 7<br>
+  Problems on Factorization Using Identity – 8
+
+  </div>
+
+
+  <button class="collapsible">COORDINATE GEOMETRY</button>
+  <div class="content">
+ Coordinate geometry<br>
+ Cartesian system: Concept<br>
+ Plotting a point in the plane if its coordinates are given<br>
+ Solved problem -1<br>
+ Solved problem -2
+     </div>
+
+
+
+
+  <button class="collapsible">LINEAR EQUATION IN TWO VARIABLES</button>
+  <div class="content">
+ Linear equations1<br>
+ Linear equation in two variables<br>
+ Solution of linear equation<br>
+ Graph of a linear equation in two variables<br>
+ Equations of lines parallel to x-axis and y-axis<br>
+ Application of linear equation 1<br>
+ Application of linear equation 2
+  </div>
+
+
+
+
+  <button class="collapsible">INTRODUCTION TO EUCLID’S GEOMETRY</button>
+  <div class="content">
+ Introduction<br>
+ Euclid’s definitions<br>
+ Euclid’s elements postulates and axioms<br> 
+ Euclid’s axioms<br>
+ Euclid’s postulates<br>
+ Equivalent versions of Euclid’s fifth postulate<br>
+ Problems on Euclid’s geometry<br>
+  </div>
+
+
+
+
+  <button class="collapsible">LINES AND ANGLES</button>
+  <div class="content">
+ Point, line, line segment and ray<br>
+ Name of angles according to their magnitude<br>
+ Intersecting lines and non intersecting lines<br>
+ related angles<br>
+ Theorems<br>
+ Transversal of parallel lines<br>
+ Problems on properties of lines<br>
+ Problems on parallel lines and transversal<br>
+ Lines parallel to the same line are parallel to each other<br>
+ Example<br>
+ Angle sum property of a triangle<br>
+ Theorem 6.7<br>
+ Theorem 6.8
+  </div>
+
+
+
+
+  <button class="collapsible">TRIANGLES</button>
+  <div class="content">
+   Introduction<br><br>
+ Congruence of Triangles<br>
+ Criteria for congruence of triangles<br>
+ Construction of a triangle –SAS<br>
+ Problem 1<br>
+ Construction of a triangle –ASA<br>
+ Problem 2<br>
+ Some properties of a triangle<br>
+ Theorem 7.2<br>
+ Problem 3<br>
+ Some more criteria for congruence of triangles<br>
+ Theorem of sides opposite<br>
+ SSS congruence rule<br>
+ RHS congruence rule<br>
+ Triangle inequality property<br>
+ Theorem of Inequalities in a triangle<br>
+ problems on inequalities<br>
+ Theorem 7.7<br>
+ Theorem 7.8<br>
+ Problems on triangles
+
+  </div>
+
+
+  <button class="collapsible">QUADRILATERALS</button>
+  <div class="content">
+ Quadrilaterals<br>
+ Angle sum property of a quadrilateral<br>   
+ Types of quadrilaterals- 1<br>
+ Types of quadrilaterals- 2<br>
+  Properties of a parallelogram 1<br>
+  Properties of a parallelogram 2<br>
+ Properties of a parallelogram 3<br>
+  Properties of a parallelogram 4<br><br>
+  Another condition for a quadrilateral to be a parallelogram<br>
+  Bisectors of angles of a parallelogram form a rectangle<br>
+  The mid-point theorem<br>
+  Converse of midpoint theorem
+  </div>
+
+
+
+
+
+  <button class="collapsible">AREAS OF PARALLELOGRAMS AND TRIANGLES</button>
+  <div class="content">
+ Figures on the same base and between the same parallels<br>
+ Parallelograms on the same base and between the same parallels<br>
+ Example 2<br>
+ Triangles on the same base and between the same parallels<br>
+ Theorem<br>
+ Theorem 9.3<br>
+ A median of a triangle divides it into two triangles of equal areas<br>
+  </div>
+
+
+
+  <button class="collapsible">CIRCLES</button>
+  <div class="content">
+ A circle<br>
+ parts of a circle<br>
+ Angle subtended by a chord at a point<br>
+  Theorem 10.1<br>
+  Theorem 10.2<br>
+  Perpendicular from the centre to a chord<br>
+  Theorem 10.4<br>
+  Circle through three points<br>
+  Theorem 10.5<br>
+  Complete the circle if an arc is given<br>
+  Equal chords and their distances from the centre<br>
+  Theorem 10.6<br>
+  Theorem 10.7<br>
+  Angle subtended by the arc of a circle<br>
+  Congruent arcs subtend equal angle at centre<br>
+  Theorem 10.8<br>
+  Theorem 10.9<br>
+  Theorem 10.10<br>
+  problems on cyclic quadrilateral<br>
+  A chord equal to the radius of the circle<br>
+  Two circles intersect at two points
+  </div>
+
+
+
+
+  <button class="collapsible">CONSTRUCTIONS</button>
+  <div class="content">
+   Bisector of an angle<br>
+   The perpendicular bisector of a line segment<br>
+T  Construction of angle 45 degree<br>
+   Construction of angles 60 degree<br>
+  Construction of angles 30 degree<br>
+  Construction of angle 90 degree<br>
+  Construction of angle 135 degree<br>
+  Construction of triangle SSS<br>
+  Construction of triangle SAS<br>
+  Construction of triangle ASA<br>
+  Given three sides<br>
+  Given two sides and included angle<br>
+  Given two angles and included side (ASA)<br>
+  Given base, sum of two sides, one base angle<br><br>
+  Given base, difference of two sides, one base angle<br>
+  Given perimeter, two base angles<br>
+  Given two sides, median on the third side<br>
+  Problems on construct triangle 1<br><br>
+  Problems on construct triangle 2<br>
+  Problems on construct angle 1<br>
+ Problems on construct angle 2
+  </div>
+
+
+
+
+  <button class="collapsible">HERON'S FORMULA</button>
+  <div class="content">
+ Area of a triangle by Heron’s formula<br>
+ Example<br>
+ Application of Heron’s formula in finding areas of quadrilaterals 1<br>
+ Application of Heron’s formula in finding areas of quadrilaterals 2<br>
+ Application of Heron’s formula in finding areas of quadrilaterals 3
+  </div>
+
+
+  <button class="collapsible">
+SURFACE AREAS AND VOLUMES</button>
+   <div class="content">
+ Surface area of a cuboid<br>
+ Surface area of a cube<br>
+ Problems on surface area of a cube 1<br>
+ Problems on surface area of a cube 2<br>
+ Problems on surface area of a cuboid 1<br>
+ Problems on surface area of a cuboid 2<br>
+ Surface area of a right circular cylinder<br>
+ Problems on surface area of a cylinder 2<br>
+ Surface area of a right circular cone<br>
+ Problems on surface area of a cone<br>
+ Curved surface area of a cone<br>
+ Surface area of a sphere<br>
+ Curved surface area of a hemisphere<br>
+ Volume of a cuboid<br>
+ Problems on volume of a cuboid 1<br>
+ Problems on volume of a cuboid 2<br>
+ Volume of a cube<br>
+ Volume of a cylinder<br>
+ Volume of a right circular cone<br>
+ Volume of a sphere<br>
+ Volume of a hemisphere
+  </div>
+
+
+  <button class="collapsible">STATISTICS</button>
+  <div class="content">
+ Collection of data<br>
+ Problem on collection of data<br>
+ Problem on presentation of data<br>
+ Histogram<br>
+ Problem on histogram<br>
+ Frequency Polygon<br>
+ Less than cumulative frequency curve<br>
+ Greater than frequency curve<br>
+ Problem on measures of central tendency
+  </div>
+
+
+
+  <button class="collapsible">PROBABILITY</button>
+  <div class="content">
+ Probability<br>
+ Probability – An experimental approach<br>
+ Probability line<br>
+ Chances and probability<br>
+ Probability when different objects are involved<br>
+ Empirical probability
+  </div>
+
+             
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                                                            <h3>PHYSICS</h3>
+        
+        
+  <button class="collapsible">MOTION</button>
+  <div class="content">
+   Motion along a straight line
+
+ Displacement<br>
+ Uniform circular motion  <br>
+ Measuring the rate of motion<br>
+ Speed with direction (Velocity)<br>
+ Rate of change of velocity (Acceleration)<br>
+ Distance time graph for an object moving in a uniform motion<br>
+ Distance time graph for a non uniform velocity<br>
+ Velocity time graph for an object moving in a uniform acceleration.<br> 
+ Velocity time graph for an object moving in non uniform acceleration.<br> 
+ Uniform circular motion
+
+  </div>
+
+        
+  <button class="collapsible">FORCE AND LAW OF MOTION</button>
+  <div class="content">
+Effects  of force<br>
+Balanced and unbalanced forces<br>
+Resultant force<br>
+Newton’s first law of motion<br>
+Inertia and mass  <br>
+Newton’s second law of motion<br>
+Mathematical formulation of second law<br>
+Newton’s third law of motion<br>
+Recoil of a gun<br>
+Conservation of momentum<br>
+Conservation laws
+  </div>
+
+
+
+ 
+  <button class="collapsible">GRAVITATION</button>
+  <div class="content">
+Gravitation<br>
+Universal law of gravitation<br>
+Free fall<br>
+Value of g<br>
+Motion of objects under the influence of gravitational force of earth<br>
+Mass and weight<br>
+Weight of an object on the moon<br>
+Thrust and pressure<br>
+Pressure in fluids<br>
+Buoyant force<br>
+Floating and sinking<br>
+Archimedes principle   <br>
+Relative density
+  </div>
+  
+
+
+ 
+  <button class="collapsible">WORK AND ENERGY</button>
+  <div class="content">
+Work<br>
+Work done by a constant force<br>
+Energy<br>
+Forms of energy<br>
+Conversion of energy<br>
+Kinetic energy<br>
+Potential energy<br>
+Potential energy of an object at a height  <br>
+Law of conservation of energy<br>
+Rate of doing work<br>
+Commercial unit of energy
+  </div>
+         
+
+
+
+  <button class="collapsible">SOUND</button>
+  <div class="content">
+Definition of sound<br>
+Production of sound<br>
+Propagation of sound  <br>
+Sound needs a medium to travel<br>
+Longitudinal waves<br>
+Characteristics of a sound wave<br>
+Transverse waves<br>
+Speed of sound in different media<br>
+Reflection of sound<br>
+Echo<br>
+Reverberation<br>
+Uses of multiple reflection of sound<br>
+Range of hearing<br>
+Applications of ultra sound -1<br>
+Applications of ultra sound -2<br>
+Sonar<br>
+Structure of human ear  
+  </div>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                                                      <h3>CHEMISTRY</h3>
+        
+        
+  <button class="collapsible">MATTER IN OUR SURROUNDINGS</button>
+  <div class="content">
+Motion along a straight line<br>
+Physical nature of matter<br>
+Characteristics of particle of matter<br>
+States of matter  <br>
+Effect of change of temperature<br>
+Effect of change of pressure<br>
+Evaporation<br>
+Factors affecting evaporation<br>
+Why do we see water droplets on the outer surface of the glass ?
+
+  </div>
+
+        
+  <button class="collapsible">IS MATTER AROUND US PURE?</button>
+  <div class="content">
+What is a mixture?<br>
+Types of mixtures<br>
+What is a solution?<br>
+Concentration of a solution<br>
+What is a suspension?<br>
+What is a colloidal solution?<br>
+Tyndall effect<br>
+Separating the components of a mixture<br>
+Separation of two immiscible liquids  <br>
+Separation of mixture of salt and ammonium chloride<br>
+Separation of two miscible liquids<br>
+Separation of components of air<br>
+Separation by crystallization<br>
+Water purification system<br>
+Physical and chemical changes<br>
+Elements<br>
+Compounds
+  </div>
+
+
+
+ 
+  <button class="collapsible">ATOMS AND MOLECULES</button>
+  <div class="content">
+Law of conservation of mass<br>
+Law of constant proportions<br>
+What is an atom?<br>
+The modern day symbols of atoms of different elements<br>
+Atomic mass<br>
+What is a molecule?<br>
+Molecules of elements<br>
+Molecules of compounds<br>
+What is an ion ?<br>
+Writing chemical formulae of compounds  <br>
+Molecular mass<br>
+Calculate the molar mass of Calcium Nitrate Ca (NO3)2<br>
+Mole concept
+  </div>
+  
+
+
+ 
+  <button class="collapsible">STRUCTURE OF AN ATOM</button>
+  <div class="content">
+Charged particles in matter<br>
+Thomson’s model of an atom<br>
+Rutherford’s model of an atom<br>
+Drawbacks of Rutherford’s model of the atom<br>
+Bohr’s model of atom<br>
+Neutrons<br>
+Distribution of electrons in different orbits<br>
+Valency  <br>
+Isotopes<br>
+Isobars
+</div> 
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                                                        <h3>BIOLOGY</h3>
+        
+        
+  <button class="collapsible">THE FUNDAMENTAL UNIT OF LIFE</button>
+  <div class="content">
+ Living organisms  are made up of cells<br>
+ Compound microscope<br>
+ Cells of an onion peel<br>
+ Unicellular and multicellular organisms<br>
+ Various  cells from the human body<br>
+ Plasma membrane/cell membrane<br>
+ Diffusion<br>
+ Osmosis<br>
+ Cell wall<br>
+ Nucleus<br>
+ Prokaryotic  and   eukaryotic  cell<br>
+ Cytoplasm<br>
+ Endoplasmic reticulam<br>
+ Cell organalles  <br>
+ Golgi apparatus and lysosomes<br>
+ Mitochondria<br>
+ Plastids<br>
+ Vacuoles<br>
+ Cell division(Mitosis and meiosis)
+
+  </div>
+
+        
+  <button class="collapsible">TISSUES</button>
+  <div class="content">
+Plant tissues<br>
+Permanent tissues<br>
+Simple permanent tissue<br>
+complex permanent tissue  <br>
+Epithelial tissue<br>
+Muscular tissue<br>
+Cartilage<br>
+Nervous tissue
+  </div>
+
+
+ 
+  <button class="collapsible">DIVERSITY IN LIVING ORGANISM</button>
+  <div class="content">
+Classification and evolution<br>
+Hierarchy of classification – 1  <br>
+Hierarchy of  classification – 2<br>
+Monera<br>
+Protista<br>
+Fungi<br>
+Plantae<br>
+Thalophyta <br>
+Bryophyta<br>
+Pteredophyta<br>
+Gymnosperms<br>
+Angiosperms<br>
+Animalia<br>
+Invertebrates<br>
+Porifera<br>
+Coelenterata<br>
+Platyhelminthes<br>
+Nematoda<br>
+Annelida<br>
+Arthropoda<br>
+Mollusca<br>
+Echinodermata<br>
+Protochordata<br>
+Vertebrates<br>
+Pisces<br>
+Amphibia<br>
+Reptalia<br>
+Aves<br>
+Mammalia<br>
+Nomenclature
+  </div>
+  
+
+
+ 
+  <button class="collapsible">WHY DO WE FALL?</button>
+  <div class="content">
+Personal and community issues which affect health<br>
+Chronic diseases and poor health<br>
+Cause of diseases<br>
+Infectious  and non infectious diseases<br>
+Use of antibiotics<br>
+Diseases spread through air  <br>
+Diseases spread through water<br>
+Diseases spread through other means<br>
+Organ specific and tissue  Specific manifestations<br>
+Principles of prevention
+  </div>
+         
+
+
+
+  <button class="collapsible">NATURAL RESOURCES</button>
+  <div class="content">
+The breath of life: Air<br>
+Biosphere<br>
+Habitat<br>
+Air pollution<br>
+The water cycle   <br>
+Water pollution<br>
+Mineral riches in the soil<br>
+The carbon Cycle<br>
+Green house effect<br>
+Ozone layer
+  </div>
+         
+
+
+
+
+
+  <button class="collapsible">IMPROVEMENT IN FOOD RESOURCES</button>
+  <div class="content">
+Crop variety improvement<br>
+Fertilizers<br>
+Irrigation<br>
+Cropping patterns  <br>
+Crop protection management<br>
+Storage<br>
+Animal husbandry<br>
+Cattle farming<br>
+Poultry farming<br>
+Egg and broiler production<br>
+Fish farming<br>
+Bee keeping
+  </div>               
+                        </div>
+
+                        
+                    </div></div>
+                    <div id="class10" style="display: none;">
+                     <center><h2>CLASS-10</h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            <h3>MATHEMATICS</h3>
+                                
+  <button class="collapsible">REAL NUMBERS</button>
+  <div class="content">
+    
+Euclid’s division lemma<br>
+Application of Euclid’s division lemma<br>
+Application of Euclid’s division lemma (short form<br>
+Euclid’s division algorithm<br>
+Problems on Euclid’s division lemma<br>
+Solved problem using Euclid’s division algorithm<br>
+The fundamental theorem of arithmetic<br>
+Problems on fundamental theorem of arithmetic<br>
+Application of fundamental theorem of arithmetic<br>
+Revisiting irrational numbers<br>
+Theorem 1.3<br>
+Theorem 1.4<br>
+Theorem 1.5<br>
+Theorem 1.6<br>
+Theorem 1.7<br>
+Revisiting rational numbers and their decimal expansions
+ 
+  
+  </div>
+
+
+
+  <button class="collapsible">POLYNOMIALS</button>
+  <div class="content">
+Introduction<br>
+Types of polynomials  <br>
+Degree of a polynomial<br>
+Geometrical meaning of zeroes of a polynomial<br>
+Relationship between zeroes and the coefficients of a polynomial<br>
+Problems on relation between zeroes and the coefficients<br>
+Division algorithm of polynomials<br>
+Problem on division of polynomials<br>
+Problems on division of algorithm<br>
+Problems on division of polynomials set 1<br>
+Problems on division of polynomials set 2
+  </div>
+
+
+  <button class="collapsible">PAIR OF LINEAR EQUATIONS IN TWO VARIABLES</button>
+  <div class="content">
+Linear equations  <br>
+Pair of linear equations in two variables<br>
+Solution of system of linear equations in two variables<br>
+Problems on pair of linear equations 1<br>
+Problems on pair of linear equations 2<br>
+Graphic method of solution of a pair of linear equations<br>
+Problems on graphical method<br>
+Problems on graph of a linear equation in two variable<br>
+Algebraic methods of solving a pair of linear equations<br>
+Problems on substitution method<br>
+Elimination method<br>
+Problems on elimination method<br>
+Cross multiplication method<br>
+Solution for cross multiplication method<br>
+Equations reducible to a pair of linear equations in two variables<br>
+Problems on equations reducible to linear form
+     </div>
+
+
+
+
+  <button class="collapsible">QUADRATIC EQUATION</button>
+  <div class="content">
+Quadratic equations<br>
+Problems on quadratic equations 1<br>
+Problems on quadratic equations 2<br>
+Problems based on quadratic equations<br>
+Solution of a quadratic equation by factorisation<br>
+Problems on quadratic equation by factorisation<br>
+Solution of a quadratic equation by completing the square<br>
+Problems on solution by completing the square<br>
+Nature of roots<br>
+Problems on nature of roots<br>
+Some special cases<br>
+problem on constructing a quadrilateral
+  </div>
+<button class="collapsible">ARITHEMATIC PROGRESSION</button>
+  <div class="content">
+Introduction to arithmetic progression<br>
+Arithmetic progressions<br>
+Problems on arithmetic progressions<br>
+nth term of an AP  <br>
+Problems on nth term of an AP<br>
+Sum of first n terms of an AP<br>
+Problems on sum of first n Terms of an AP
+  </div>
+<button class="collapsible">TRIANGLES</button>
+  <div class="content">
+Triangles<br>
+Problems on similar triangles<br>
+Problems on triangles<br>
+Problems on inequalities<br>
+Problems on AAA postulates<br>
+Similarity of triangles<br>
+Theorem 6.1<br>
+Theorem 6.2<br>
+Problems on SSS postulates<br>
+Problems on SAS postulates<br>
+Problems on areas of similar triangles<br>
+Thales theorem<br>
+Theorem 6.3<br>
+Theorem 6.4<br>
+Theorem 6.5<br>
+Areas of similar triangles<br>
+Theorem 6.6<br>
+Problems on basic proportionality theorem<br>
+Solved problem-1<br>
+Solved problem -2<br>
+Solved problem-3<br>
+Pythagoras theorem<br>
+Theorem 6.7<br>
+Theorem 6.8<br>
+Theorem 6.9<br>
+Problems on Pythagoras Theorem
+  </div>
+<button class="collapsible">COORDINATE GEOMETRY</button>
+  <div class="content">
+Introduction<br>
+Problems on distance between two points<br>
+Distance formula<br>
+Problems on distance formula<br>
+Section formula<br>
+Problems on section formula<br>
+Area of a triangle<br>
+Problems on area of a triangle<br>
+  </div>
+<button class="collapsible">INTRODUCTION TO GEOMETRY</button>
+  <div class="content">
+Trigonometric ratios<br>
+Problems on trigonometric ratios<br>
+Trigonometric ratios of 30 degree angle<br>
+Trigonometric ratios of 45 degree angle<br>
+Trigonometric ratios of 60 degree angle<br>
+Problems on trigonometric ratios of some specific angles<br>
+Trigonometric ratios of complementary angles<br>
+Problems on trigonometric ratios of complementary angles<br>
+Solved problem -1<br>
+Solved problem -2<br>
+Trigonometric identities<br>
+Problems on trigonometric identities<br>
+Pythagorean identities -1<br>
+Pythagorean identities -2<br>
+Reciprocal identities
+  </div>
+ <button class="collapsible">SOME APPLICATIONS OF GEOMETRY</button>
+  <div class="content">
+Heights and distances<br>
+Problems on angle of elevation<br>
+Problems on angle of depression<br>
+Problems on heights and distances 1<br>
+Problems on heights and distances 2<br>
+Problems on heights and distances 3<br>
+Understand the question<br>
+Solved problem
+  </div>
+<button class="collapsible">CIRCLES</button>
+  <div class="content">
+Tangent to a circle<br>
+Theorem 10.1<br>
+Problems on tangent to a circle<br>
+Tangent at any point of a circle is perpendicular to the radius<br>
+Number of tangents from a point on a circle<br>
+Problems on number of tangents from a point on a circle<br>
+Theorem<br>
+Problems on circle 1<br>
+Problems on circle 2
+  </div>
+<button class="collapsible">CONSTRUCTIONS</button>
+  <div class="content">
+To divide a line segment into a number of equal parts<br>
+To divide a line segment in a given ratio<br>
+Problems on divide a line segment in a given ratio<br>
+Construction of tangents from a point in the circle<br>
+Construction of tangents from a point outside the circle<br>
+Problems<br>
+Construction of similar triangle<br>
+Problems on construction of similar triangle set 1<br>
+Problems on construction of similar triangle set 2
+
+  </div>
+<button class="collapsible">AREAS RELATED TO CIRCLES</button>
+  <div class="content">
+ Concept of perimeter and area of a circle<br>
+Problems on circumference of a circle<br>
+Area of sector and segment of a circle<br>
+Area of a sector : solved problem<br>
+solved problem<br>
+Area of segment<br>
+Area of combination of plane figures<br>
+Solved problem 1<br>
+Solved problem 2<br>
+Solved problem 3
+  </div>
+ <button class="collapsible">SURFACE AREA AND VOLUMES</button>
+   <div class="content">
+Introduction<br>
+Surface area and volume of combination of solids<br>
+Surface area of combination of solids 1<br>
+Surface area of combination of solids <br>
+Surface area of combination of solids 3<br>
+Example<br>
+Surface area of a right circular cylinder<br>
+Problems on Surface area of a right circular cylinder<br>
+Surface area of a right circular cone<br>
+Curved surface area of a hemisphere<br>
+Problems on surface area of a cone<br>
+Surface area of a cuboid<br>
+Surface area of a cube<br>
+Problems on surface area of a cube<br>
+Volume of a combination of solids<br>
+Volume of a cuboid<br>
+Problems on volume of a cuboid 1<br>
+Problems on volume of a cuboid 2<br>
+Volume of a cube<br>
+Volume of a cylinder<br>
+Problems on volume of a cylinder<br>
+Problems of a right circular cone<br>
+Volume of a sphere<br>
+Volume of a hemisphere<br>
+Conversion of solid from one shape to another 1<br>
+Conversion of solid from one shape to another 2<br>
+Frustum of a cone<br>
+Frustum of a cone: Solved problem<br>
+Volume of a pipe<br>
+  </div>
+<button class="collapsible">STATISTICS</button>
+  <div class="content">
+Arithmetic mean<br>
+Mean of grouped data<br>
+Finding mean of grouped data using direct method<br>
+Problems on mean of ungrouped data<br>
+Problems on arithmetic mean 1<br>
+Problems on arithmetic mean 2<br>
+Problems on arithmetic mean 3<br>
+Problems on properties of mean<br>
+Mode<br>
+Mode of grouped data<br>
+Problems on mode 1<br>
+Problems on mode 2<br>
+Problems on mode 3<br>
+Median<br>
+Median of grouped data<br>
+Problems on median 1<br>
+Problems on median 2<br>
+Problems on median 3<br>
+Problems on median<br>
+Graphical representation of cumulative frequency distribution<br>
+Greater than type ogive<br>
+Less than type ogive
+  </div>
+<button class="collapsible">PROBABILITY</button>
+  <div class="content">
+Probability line<br>
+Chances and probability<br>
+Probability when different objects are involved<br>
+Problems on tossing of coins<br>
+Problems on probability 1<br>
+Problems on probability 2<br>
+Problems on probability 3<br>
+Problems on probability 4<br>
+Problems on probability 5<br>
+Problems on probability 6
+  </div>                        
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                                                      <h3>PHYSICS</h3>
+                                 <h3>LIGHT: REFLECTION AND REFRACTION</h3>
+        
+       
+  <button class="collapsible">FORCE AND PRESSURE</button>
+  <div class="content">
+Reflection of light<br>
+Spherical mirrors<br>
+Image formation by spherical mirrors<br>
+Ray diagrams – Convex mirror<br>
+Ray diagrams – Concave mirror<br>
+Uses of concave mirrors<br>
+Uses of convex mirrorsv
+Sign convention for reflection by spherical mirrors<br>
+Mirror formula and magnification<br>
+Refraction of Light<br>
+Refraction through a rectangular glass slab<br>
+The refractive index<br>
+Refraction by spherical lenses<br>
+Image formation by spherical lenses<br>
+Lenses –Ray diagrams<br>
+Images formed by a convex lens   <br>
+Images formed by a concave lens<br>
+Sign convention for spherical lenses<br>
+Lens formula and magnification<br>
+Power of lens<br>
+Uses of lenses
+
+  </div>
+
+       
+  <button class="collapsible">HUMAN EYE AND COLOURFUL WORLD</button>
+  <div class="content">
+Human eye<br>
+Power of accommodation  <br>
+Myopia and its correction<br>
+Hypermetropia and its correction<br>
+Presbyopia and its correction<br>
+Refraction of light through a prism<br>
+Dispersion of white light by a glass prism<br>
+Recombination of the spectrum of white light.<br>
+Atmospheric refraction<br>
+Tyndall effect<br>
+Why is the colour of the clear sky blue?<br>
+Colour of the sun at sunrise and sunset
+  </div>
+
+
+
+  <button class="collapsible">ELECTRICITY</button>
+  <div class="content">
+Electric current<br>
+Electric circuit<br>
+Electric potential and potential difference<br>
+Circuit diagram<br>
+Unit of current<br>
+Symbols of some commonly used components in circuit diagrams<br>
+Understanding Ohm’s law<br>
+Ohm’s law explained<br>
+Ohm’s law- V-I graph<br>
+Factors on which the resistance of a conductor depends<br>
+Resistors in parallel and in series<br>
+Heating effect of electric current   <br>
+Practical application of heating effect of electric current<br>
+Electric power
+  </div>
+<button class="collapsible">MAGNETIC EFFECTS OF CURRENT</button>
+  <div class="content">
+Magnetic field and field line<br>
+Magnetic field due to a current carrying conductor.<br>
+Right hand thump rule<br>
+Magnetic field due to a current through a circular loop.<br>
+Magnetic field due to a current in a solenoid.<br>
+Force on a current carrying conductor in a magnetic field<br>
+Fleming’s left hand rule   <br>
+Working principle of an electric motor<br>
+Electromagnetic induction<br>
+Fleming’s right hand rule<br>
+Electric generator<br>
+Working principle of AC generator<br>
+DC generator<br>
+DC Generator parts<br>
+Domestic electric circuits
+  </div>
+<button class="collapsible">SOURCE OF ENERGY</button>
+  <div class="content">
+What is a good source of energy<br>
+Conventional sources of energy<br>
+Thermal power plant.<br>
+Hydro power plants<br>
+Bio mass<br>
+Wind power station   <br>
+Non Conventional Sources of energy – Solar energy<br>
+Energy from the sea<br>
+Ocean thermal energy<br>
+Geothermal energy<br>
+Nuclear energy<br>
+Nuclear power station<br>
+Nuclear fusion<br>
+Environmental consequences
+  </div>
+<button class="collapsible">STARS AND THE SOLAR SYSTEM</button>
+  <div class="content">
+The Moon<br>
+Phases of the Moon<br>
+The Moon’s surface<br>
+The stars<br>
+Constellations<br>
+The solar system<br>
+The sun and planets<br>
+Asteroids  <br>
+Comets<br>
+Meteors<br>
+Artificial satellites<br>
+Orion
+
+  </div>
+ 
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            
+                                 <h3>CHEMISTRY</h3>
+        
+       
+  <button class="collapsible">CHEMICAL REACTIONS AND EQUATIONS</button>
+  <div class="content">
+Writing a chemical equation<br>
+Balanced chemical equations<br>
+Types of chemical reactions: Combination reaction<br>
+Decomposition reaction<br>
+Decomposition of calcium carbonate<br>
+Displacement reaction<br>
+Double displacement reaction<br>
+Oxidation and reduction<br>
+Corrosion   <br>
+Rancidity
+  </div>
+
+       
+  <button class="collapsible">ACID BASES AND SALT</button>
+  <div class="content">
+Acids and bases in the laboratory<br>
+How do acids and bases react with metals?<br>
+How do acids and bases react with each other?<br>
+Reaction of metallic oxides with acids   <br>
+Reaction of non – metallic oxides with base<br>
+What happens to an acid or base in water solution ?<br>
+How strong are acid or base solutions?<br>
+Importance of pH in everyday life<br>
+Indicators<br>
+Chemicals from common salt<br>
+Are the crystals of salt really dry?<br>
+Plaster of Paris for casting
+  </div>
+
+  <button class="collapsible">METALS AN NONMETALS</button>
+  <div class="content">
+Physical properties of metals<br>
+Metals are good conductors of heat<br>
+Metals are good conductors of electricity<br>
+Physical properties of non – metals<br>
+What happens when metals are burnt in air?<br>
+What happens when metals react with water?<br>
+Reaction of some other metals with water<br>
+What happens when metals react with acids?<br>
+How do metals react with solutions of other metal salts?<br>
+The reactivity series<br>
+How do non-metals react?<br>
+Properties of ionic compounds<br>
+Occurrence of metals<br>
+Extraction of metals<br>
+Enrichment of ores<br>
+Roasting   <br>
+Extracting metals low in the activity series<br>
+Extracting metals in the middle of the activity series<br>
+Extracting metals towards the top of the activity series<br>
+Refining of metals<br>
+Corrosion<br>
+Prevention of corrosion
+  </div>
+<button class="collapsible">CARBON AND ITS COMBOUNDS</button>
+  <div class="content">
+Bonding in carbon- The covalent bond<br>
+Structure of methane and carbon tetra chloride<br>
+Versatile nature of carbon<br>
+Saturated and unsaturated carbon compounds<br>
+Chains, branches and rings<br>
+Homologous series<br>
+Nomenclature of carbon compounds<br>
+Chemical Properties of carbon compounds: Combustion<br>
+Oxidation<br>
+Addition reaction<br>
+Substitution reaction<br>
+Some important carbon compounds- Properties of ethanol<br>
+Properties of ethanoic acid<br>
+Soaps and detergents<br>
+Soaps and detergents in soft and hard water<br>
+How soap is made ?   
+  </div>
+<button class="collapsible">PERIODIC CLASSIFICATION OF ELEMENTS</button>
+  <div class="content">
+Early attempts at the classification of elements: Dobereiner’s triads<br>
+Newland’s law of octaves<br>
+Mendeleev’s periodic table<br>
+Limitations of Mendeleev’s classification<br>
+The Modern periodic table  <br>
+Position of elements in the modern periodic table<br>
+Trends in the modern periodic table<br>
+Metallic and non metallic properties
+</div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                                                       <h3>BIOLOGY</h3>
+        
+       
+  <button class="collapsible">
+LIFE PROCESSES</button>
+  <div class="content">
+Autotrophic nutrition<br>
+Structure of leaf<br>
+Test for starch<br>
+Nitrogen from outside<br>
+Heterotrophic nutrition<br>
+Nutrition in organisms – Amoeba<br>
+Nutrition in organisms – Paramecium<br>
+Nutrition in human beings<br>
+Small intestine<br>
+Peristaltic movements of large intestine<br>
+Role digestive glands- Liver and pancreas<br>
+Respiration<br>
+Gas Exchange in lungs   <br>
+Mitochondrion<br>
+Transportation in human beings<br>
+Human heart<br>
+Blood vessels<br>
+Platelets and lymph<br>
+Transportation in plants<br>
+Water movement through xylem<br>
+Transport of food and other substances through phloem<br>
+Excretion in human beings<br>
+Excretion in plants
+  </div>
+
+       
+  <button class="collapsible">
+CONTROL AND COORDINATION</button>
+  <div class="content">
+Animals- Nervous system<br>
+What happens in reflex action?<br>
+Human brain<br>
+Coordination in plants<br>
+Movement due to growth<br>
+Hormones in human beings- Pituitary gland<br>
+Hormones in human beings- Adrenal  gland<br>
+Hormones in human beings -Thyroid gland  <br>
+Hormones in human beings –  Pancreas<br>
+Sex hormones
+
+  </div>
+
+
+
+
+  <button class="collapsible">HOW DO ORGANISMS REPRODUCE</button>
+  <div class="content">
+Modes of reproduction used by single organisms- Binary fission in amoeba<br>
+Division of malarial parasite plasmodium<br>
+Fragmentation<br>
+Regeneration<br>
+Budding in hydra<br>
+Vegetative reproduction in plants<br>
+Sexual reproduction in flowering plants<br>
+Pollination, fertilization and seed formation<br>
+Kinds of pollination<br>
+Male Reproductive system in human beings<br>
+Structure of a sperm<br>
+Female reproductive organs in human beings<br>
+Ovum<br>
+Development of an embryo   <br>
+Birth of a baby<br>
+Menstruation<br>
+Reproductive health
+  </div>
+ 
+
+
+
+  <button class="collapsible">HERIDITY AND EVOLUTION</button>
+  <div class="content">
+Accumulation of variation during reproduction<br>
+Heredity- Inherited traits<br>
+Rules for the inheritance of traits-Mendel’s contribution<br>
+Expression of traits<br>
+Sex determination in human beings   <br>
+Evolution<br>
+Acquired and inherited traits<br>
+Speciation<br>
+Evolution and classification<br>
+Fossils<br>
+Evolution by stages<br>
+Human evolution
+  </div>
+         
+
+
+
+  <button class="collapsible">OUR ENVIRONMENT</button>
+  <div class="content">
+Biodegradable and non biodegradable<br>
+Eco-system and its components<br>
+Water hyacinth<br>
+Food chains<br>
+Food web<br>
+Ozone layer depletion   <br>
+Managing the garbage we produce
+  </div>
+<button class="collapsible">MANAGEMENT OF NATURAL RESOURCES</button>
+  <div class="content">
+Pollution of Ganga river<br>
+Reduce, recycle, reuse<br>
+Manage our resources<br>
+Forests and wild life- Stake holders<br>
+Sustainable management<br>
+Water for all<br>
+Dams<br>
+Water harvesting<br>
+Coal and petroleum   <br>
+</div>
+ </div>
+ </div></div>
+                    <div id="class11" style="display: none;">
+                     <center><h2>CLASS-11</h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            <h3>MATHEMATICS</h3>
+                                 
+  <button class="collapsible">SETS</button>
+ <button class="collapsible">RELATIONS AND FUNCTIONS</button>
+ <button class="collapsible">TRIGONOMETRIC FUNCTIONS</button>
+ <button class="collapsible">TRIGONOMETRIC IDENTITIES</button>
+ <button class="collapsible">PRINCIPLE OF MATHEMATICAL INDUCTION</button>
+ <button class="collapsible">COMPLEX NUMBERS AND QUADRATIC EQUATIONS</button>
+ <button class="collapsible">LINEAR INEQUALITIES</button>
+  <div class="content">
+Introduction<br>
+Problems on distance between two points<br>
+Distance formula<br>
+Problems on distance formula<br>
+Section formula<br>
+Problems on section formula<br>
+Area of a triangle<br>
+Problems on area of a triangle<br>
+  </div>
+<button class="collapsible">BINOMIAL THEOREM</button>
+<button class="collapsible">SEQUENCES AND SERIES</button>
+<button class="collapsible">STRAIGHT LINES</button>
+<button class="collapsible">CONIC SECTIONS</button>
+<button class="collapsible">INTRODUCTION TO 3 DIMENSIONAL GEOMETRY</button>
+<button class="collapsible">LIMITS AND DERIVATIVES</button>
+<button class="collapsible">MATHEMATICAL REASONING</button>
+<button class="collapsible">PERMUTATIONS, COMBINATIONS</button>
+<button class="collapsible">STATISTICS</button>
+<button class="collapsible">PROBABILITY</button>
+<button class="collapsible">MATHEMATICAL MODELLING</button>
+</div>
+  <div class="col-xl-4 col-lg-5">
+  <h3>PHYSICS</h3>
+  <button class="collapsible">PHYSICAL WORLD</button>
+  <button class="collapsible">UNITS AND MEASUREMENTS</button>
+<button class="collapsible">MOTION IN A STRAIGHT LINE</button>
+ <button class="collapsible">LAWS OF MOTION</button>
+ <button class="collapsible">WORK, ENERGY AND POWER</button>
+ <button class="collapsible">SYSTEM OF PARTICLES AND ROTATIONAL MOTION</button>
+  <button class="collapsible">GRAVITATION</button>
+  <button class="collapsible">MECHANICAL PROPERTIES OF SOLIDS</button>
+  <button class="collapsible">MECHANICAL PROPERTIES OF FLUIDS</button>
+  <button class="collapsible">THERMAL PROPERTIES OF MATTER</button>
+  <button class="collapsible">THERMODYNAMICS</button>
+  <button class="collapsible">OSCILLATIONS</button>
+  <button class="collapsible">WAVES</button>               
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                         <h3>CHEMISTRY</h3>
+
+
+        
+  <button class="collapsible">SOME BASIC CONCEPTS OF CHEMISTRY</button>
+ <button class="collapsible">                              
+STRUCTURE OF ATOMS</button>
+ <button class="collapsible">                              
+CLASSIFICATION OF ELEMENTS AND PERIODICITY IN PROPERTIES
+</button>
+<button class="collapsible">                              
+CHEMICAL BONDING AND MOLECULAR STRUCTURE
+</button>
+<button class="collapsible">                              
+THERMODYNAMICS
+</button>
+<button class="collapsible">                              
+EQUILIBRIUM
+</button>
+<button class="collapsible">                              
+REDOX REACTIONS
+</button>
+<button class="collapsible">                              
+HYDROGEN
+</button>
+<button class="collapsible">                              
+THE S-BLOCK ELEMENTS(GROUP 1 ELEMENTS)
+</button>
+<button class="collapsible">                              
+THE S-BLOCK ELEMENTS(GROUP 2 ELEMENTS)
+</button>
+<button class="collapsible">                              
+THE S-BLOCK ELEMENTS(GROUP 13 ELEMENTS)
+</button>
+<button class="collapsible">                              
+THE S-BLOCK ELEMENTS(GROUP 14 ELEMENTS)
+</button>
+<button class="collapsible">                              
+ORGANIC CHEMISTRY – SOME BASIC PRINCIPLES AND TECHNIQUES
+</button>
+<button class="collapsible">                              
+HYDROCARBONS
+</button>
+<button class="collapsible">                              
+ENVIRONMENTAL CHEMISTRY
+</button>   
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                          <h3>BIOLOGY</h3>
+<button class="collapsible">
+DIVERSITY IN LIVING WORLD</button>
+<button class="collapsible">
+THE LIVING WORLD</button>
+<button class="collapsible">
+BIOLOGICAL CLASSIFICATION</button>
+<button class="collapsible">
+PLANT KINGDOM</button>
+<button class="collapsible">
+ANIMAL KINGDOM</button>
+<button class="collapsible">
+MORPHOLOGY OF FLOWERING PLANTS</button>
+<button class="collapsible">
+ANATOMY IN FLOWERING PLANTS</button>
+<button class="collapsible">
+STRUCTURAL ORGANISATION IN ANIMALS</button>
+<button class="collapsible">
+CELL:THE UNIT OF LIFE</button>
+<button class="collapsible">
+BIOMOLECULES</button>
+<button class="collapsible">
+CELL CYCLE AND CELL DIVISION</button>
+<button class="collapsible">
+TRANSPORT IN PLANTS</button>
+<button class="collapsible">
+MINERAL NUTRITION</button>
+<button class="collapsible">
+PHOTOSYNTHESIS IN HIGHER PLANTS</button>
+<button class="collapsible">
+RESPIRATION IN PLANTS</button>
+ <button class="collapsible">
+PLANT GROWTH AND DEVELOPMENT</button>
+<button class="collapsible"> 
+DIGESTION AND ABSORPTION
+</button>
+ <button class="collapsible">
+ BREATHING AND EXCHANGE OF GASES</button>
+ <button class="collapsible">
+BODY FLUIDS AND CIRCULATION
+</button>
+<button class="collapsible">
+ EXCRETORY PRODUCTS AND THEIR ELIMINATION</button>
+<button class="collapsible">
+ LOCOMOTION AND MOVEMENT</button>
+<button class="collapsible">
+ NEURAL CONTROL AND COORDINATION</button>
+<button class="collapsible">
+ CHEMICAL COORDINATION AND INTEGRATION</button>
+</div>
+          </div></div>
+                          
+                        
+                    <div id="class12" style="display: none;">
+                     <center><h2>CLASS-12</h2></center>
+                    <div class="row mb-5 pb-5">
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Video description -->
+                            <div class="tm-bg-gray tm-share-box">
+                                 <H3>Physics</H3>
+                                Electric Charges and Fields<br><br>Electrostatic Potential and Capacitance<br><br>Current Electricity<br><br>Moving Charges and Magnetism<br><br>Magnetism and Matter<br><br>Electromagnetic Induction<br><br>Alternating Current<br><br>Electromagnetic waves<br><br>Ray Optics and Optical Instrument<br><br>Wave Optics<br><br>Dual Nature of Radiation and Matter<br><br>Atoms<br><br>Nuclei<br><br><a href="https://drive.google.com/file/d/1qBqBPwj9M6kTTDyQ6hKy3eM_7ymOS6Dy/preview">Semiconductor Electronics: Materials, Devices and Simple Circuits</a><br><br>Communication Systems<br><br>Medical/Engg Entrance Tests<br><br>IIT Solved Questions<br><br>JEE Questions<br><br>Question Generations<br><br>Performane chart<br><br>
+                            </div>                          
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            <div class="tm-bg-gray tm-share-box">
+                                 <h3>Chemistry</h3>
+        <br><br>
+                  The Solid State<br><br><a href="https://drive.google.com/file/d/1WqNKo5NE5D1EwL1B4QIX6Mj9-m--EW_u/preview">Solutions</a><br><br>Electrochemistry<br><br>Chemical Kinetics<br><br>Surface Chemistry<br><br>General Principles and Process of Isolation of Elements<br><br>The p-Block Elements<br><br>d- and f-block Elements<br><br>Co-ordination Compounds<br><br>Haloalkanes and Haloarenes<br><br>Alcohols, Phenols and Ethers<br><br>Aldehydes, Ketones and Carboxylic Acid<br><br>Amines<br><br>Biomolecules<br><br>Polymers<br><br>Chemistry in Everyday Life<br><br>Medical/Engg Entrance Tests<br><br>Important Multiple Choice Questions<br><br>IIT Solved Questions<br><br>JEE Questions<br><br>Question Generations<br><br>Performane chart<br><br>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            <div class="tm-bg-gray tm-share-box">
+                                 <h3>Biology</h3>
+        <br><br>
+                   Reproduction in Organisms<br><br>Sexual Reproduction in Flowering Plants<br><br>Human Reproduction<br><br>Reproductive Health<br><br>Principles of Inheritance and Variation<br><br>Molecular Basis of Inheritance<br><br>Evolution<br><br><a href="https://drive.google.com/file/d/1kpiy2lC0Xsktzg-o6dw7pRuBuwKYIESV/preview">Human Health and Disease</a><br><br>Strategies for Enhancement in Food production<br><br>Microbes in Human Welfare<br><br>Biotechnology-Principles and Processes<br><br>Biotechnology and its Applications<br><br>Ecosystem<br><br>Biodiversity and Conservation<br><br>Environmental Issues<br><br>Medical Entrance Tests<br><br>Important Multiple Choice Questions<br><br>Question Generations<br><br>Performance Chart<br><br>
+
+                        </div></div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            <div class="tm-bg-gray tm-share-box">
+                                 <h3>Mathematics</h3>
+        <br><br>
+                   Relations, Functions<br><br>Inverse Trigonometric Functions<br><br>Matrices<br><br>Determinants<br><br>Continuity and Differentiability<br><br>Applications of Derivatives<br><br>Integrals<br><br>Differential Equations<br><br>Vector Algebra<br><br>Three Dimensional Geometry<br><br>Linear Programming<br><br>Probability<br><br>Application of Integrals<br><br>Engg Entrance Tests<br><br>IIT Solved Questions<br><br>JEE Questions<br><br>Model Exam<br><br>Question Generations<br><br>Performane chart<br><br>         
+               </div>
+
+                        </div>
+
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- Share box -->
+                            <div class="tm-bg-gray tm-share-box">
+                                <h3>English Part 1</h3><br><br>
+                                 Nouns<br><br>Comprehension<br><br>Verbs<br><br>Tense<br><br>Present Tense<br><br>Past Tense<br><br>Future Tense<br><br>Dictionary<br><br>Phrasal Verbs<br><br>Adverbs and Adverb Phrases<br><br>Adjectives<br><br>Voice (Active or Passive)<br><br>Parts of Speech (Direct / Indirect)<br><br>Sentences<br><br>Question Tag<br><br>Transitive and Intransitive Verb<br><br>Dialogue<br><br>Contracted forms<br><br><h3>English Part - 2</h3>Essay Writing<br><br>‘ing’ Form<br><br>Modals<br><br>Clauses<br><br>Determiners<br><br>Prepositions<br><br>Conjunctions<br><br>Use (Who, Whom,Whose, Which)<br><br>Metaphors<br><br>Paragraph Writing<br><br>Outline Story<br><br>Letter Writing<br><br>
+                            </div>
+                        </div>
+                    </div></div>
+                </main>
+
+                <!-- Subscribe form and footer links -->
+                
+
+                <footer class="row pt-5 footer">
+                    <div class="container text-center col-12">
+                      <center>  <p class="text-right">Copyright 2020 IERT GLOBAL PRIVATE LTD</p> </center>
+                        
+                        
+                    </div>
+                </footer>
+            </div> <!-- .tm-content-container -->
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
