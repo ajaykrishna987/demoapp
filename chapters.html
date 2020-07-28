@@ -10,7 +10,7 @@
     <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <!--
 
 TemplateMo 552 Video Catalog
@@ -110,10 +110,10 @@ https://templatemo.com/tm-552-video-catalog
                                         <ul class="navbar-nav text-uppercase">
                                              
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link text-black" href="index.html">Demo</a>
+                                                <a class="nav-link tm-nav-link text-black" href="demo.html">Demo</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link text-black" href="#">Chapters</a>   
+                                                <a class="nav-link tm-nav-link text-black" href="chapters.html">Chapters</a>   
                                             </li>
                                         </ul>
                                     </div>
@@ -123,17 +123,17 @@ https://templatemo.com/tm-552-video-catalog
                     </div>
                 </div>
             </div>
-            <div class="tm-welcome-container  tm-fixed-header tm-fixed-header-2">
+          <div class="tm-welcome-container">
+
             </div>
-          
-            <div   id="tm-fixed-header-bg"></div> <!-- Header image -->
+              <img src="img/EDGlobe_Final.png">
         </div>
         <div class="container-fluid">
             <div id="content" class="mx-auto tm-content-container">
                 <main>
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="tm-page-title mb-4">Classwise Subject & Topics</h2>
+                            <h2 class="tm-page-title mb-4">Classwise Subject & Demos</h2>
                             <div class="tm-categories-container mb-5" >
                                 <h3 class="tm-text-primary tm-categories-text">CBSE CLASS :</h3>
                                  <select id="ddlPassport">
@@ -239,7 +239,7 @@ https://templatemo.com/tm-552-video-catalog
             }
             else if($(this).val() == "7") {
                 $("#class1").hide();
-                $("#class2").hide();
+                $("#class2").show();
                 $("#class3").hide();
                 $("#class4").hide();
                 $("#class5").hide();
