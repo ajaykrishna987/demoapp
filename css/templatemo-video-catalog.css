@@ -356,7 +356,7 @@ h2, p { color: #666666; }
 width: 100%;
 height: auto; } 
 .tm-fixed-header-3 { background-image: url(../img/contact-1.jpg); }
-img {
+img.tm-welcome-container {
     width: 100%;
     height: auto;
 }
